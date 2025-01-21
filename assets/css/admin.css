@@ -651,7 +651,7 @@ a {
 
     .content {
         background-color: #fff !important;
-        border: 2px solid #fff;
+        border: 2px solid rgba(55, 65, 81, 0.1);
     }
 }
 
@@ -659,6 +659,6 @@ a {
 
     thead {
         background-color: #fff !important;
-        border: 2px solid #fff;
+        border: 2px solid rgba(55, 65, 81, 0.1);
     }
 }

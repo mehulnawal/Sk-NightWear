@@ -23,8 +23,6 @@ $(document).ready(function () {
 // responsive menu srt
 
 
-
-
 // accordion srt
 $(document).ready(function () {
     $(".q1-title").click(function () {
@@ -110,9 +108,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// search srt
+$(document).ready(function () {
+    $("#search-icon").click(function () {
+        $(".search-bar-main-main").addClass("search-bar-main-main-transform");
+    });
+});
+
+// search end
 
 // cart icon
-// cart
 $(document).ready(function () {
     $("#cart-icon").click(function () {
         $(".shopping-cart-main").addClass("shopping-cart-main");
@@ -140,24 +145,3 @@ $(document).ready(function () {
     });
 });
 // user login
-
-
-// gsap
-let tl = gsap.timeline()
-
-tl.from(".nav-links-main ul li", {
-    y: -20,
-    opacity: 0,
-    duration: 0.5,
-    stagger: 0.3,
-});
-
-function adjustBannerBackgroundPosition() {
-    const bannerBg = document.querySelector('.banner-right-bg');
-    if (bannerBg) {
-        bannerBg.style.backgroundPosition = 'center center'; // Explicit centering
-    }
-}
-
-// Ensure this runs on load
-window.addEventListener('load', adjustBannerBackgroundPosition);

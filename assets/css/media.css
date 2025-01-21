@@ -35,11 +35,38 @@
     .menu-icon-toggle {
         display: none;
     }
+
+    .nav-links {
+        /* justify-content: start !important; */
+        white-space: nowrap !important;
+        margin-left: -50px !important;
+    }
+
+    .logo-main::after {
+        right: 30px !important;
+    }
 }
 
 @media (max-width: 1024px) {
     .menu-icon-toggle {
         display: none;
+    }
+
+    .nav-links {
+        /* justify-content: start !important; */
+        /* margin-left: -540px !important; */
+        white-space: nowrap !important;
+        margin-left: -70px !important;
+    }
+
+    .logo-main::after {
+        top: -15px !important;
+        height: 64px !important;
+    }
+
+    .nav-links::before {
+        top: -20px !important;
+        height: 65px;
     }
 }
 
@@ -48,6 +75,7 @@
     .logo-main::after {
         top: -23px !important;
         height: 64px !important;
+        /* right: 80px !important; */
     }
 
     .nav-links::before {
@@ -92,7 +120,7 @@
     }
 
     .menu-icon-toggle {
-        display: none;
+        display: block;
     }
 
     .design-1-img {
@@ -123,6 +151,11 @@
 
     .w-Collection-right {
         padding: 30px !important;
+    }
+
+    #menu-icon {
+        position: absolute;
+        left: 30px;
     }
 
 }
@@ -175,6 +208,14 @@
             width: 100% !important;
         }
     }
+
+    .add-to-cart-btn a {
+        left: 35% !important;
+    }
+
+    header {
+        height: fit-content !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -190,10 +231,52 @@
     .banner-bg-img {
         display: none;
     }
+
+    .form-main {
+        width: 100% !important;
+    }
+
+    .menu-list-main {
+        width: 100% !important;
+    }
+
+    .logo-main img {
+        /* margin-left: 130px !important; */
+    }
+
+    .header-text span {
+        font-size: 11px !important;
+        display: inline-block;
+    }
+
+    .menu-icon-toggle {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 430px) {
     .logo {
         font-size: 20px !important;
+    }
+
+    .logo-main img {
+        /* margin-left: 130px !important; */
+    }
+
+    .sunshine-main h2 {
+        font-size: 45px;
+    }
+
+    .sunshine-main p {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .add-to-cart-btn a {
+        left: 30% !important;
+    }
+
+    .shop-now-main a {
+        padding: 20px 100px;
     }
 }
