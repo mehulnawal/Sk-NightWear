@@ -1,40 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- https://retailflow-template.webflow.io/ -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- animate css -->
-    <link rel="stylesheet" href="./css/animate.min.css">
-    <!-- slick css -->
-    <link rel="stylesheet" href="./css/slick.css">
-    <!-- aos css -->
-    <link rel="stylesheet" href="./css/aos.css">
-    <!-- font awesome css -->
-    <link rel="stylesheet" href="./css/all.min.css">
-    <!-- bootstrap cdn -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/prac.css">
-    <!-- media css -->
+    <meta name="description" content="SnowTech">
+    <title>Shop page | Sk NightWear</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/logo.png">
+
+    <!-- aos link -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
+    <!-- font awesome cnd -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/media.css">
+
+    <!-- Bootstrap  icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- about css style  -->
+    <link rel="stylesheet" href="./assets/css/about.css">
+
+    <!-- main css style  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- shop css style  -->
+    <link rel="stylesheet" href="./assets/css/shop.css">
+
+    <!-- link media css -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+
 </head>
 
+<body class="overflow-x-hidden">
 
-<body>
+    <!-- header srt -->
+    <header class="m-0">
+
+        <!-- navbar srt -->
+        <nav class="main-nav">
+            <div class="container-fluid">
+                <div class="nav-head py-2">
+                    <div class="row align-items-center h-100">
+
+                        <div class="col-3 d-lg-flex justify-content-center align-items-center gap-3 logo-main">
+
+                            <!-- main logo -->
+                            <a draggable="false" class="logo m-0 d-lg-block d-none" href="#">
+                                SK NightWear
+                            </a>
+
+                            <!-- responsive menu -->
+                            <li class="menu-list d-flex justify-content-center d-lg-none mx-auto ">
+                                <a href="" class="d-flex gap-2 flex-column">
+                                    <div class="menu1 menu"></div>
+                                    <div class="menu2 menu"></div>
+                                </a>
+                            </li>
+                        </div>
+
+                        <!-- main nav-links -->
+                        <div class="col-lg-7 col-md-6 col-sm-6 col-4 nav-links d-flex justify-content-center">
+                            <ul class="d-flex justify-content-center mb-0 d-lg-flex d-none gap-5">
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+
+                                <li>
+                                    <a href="./about.html">About us</a>
+                                </li>
+
+                                <li>
+                                    <a href="./shop.html" class="active">Shop</a>
+                                </li>
+
+                                <li>
+                                    <a href="./collection.html">Collection</a>
+                                </li>
+
+                                <li>
+                                    <a href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+
+                            <!-- responsive logo -->
+                            <a draggable="false" class="logo m-0 d-lg-none d-sm-block d-none" href="#">
+                                SK NightWear
+                            </a>
+
+                            <!-- responsive logo -->
+                            <a draggable="false" class="logo m-0 d-sm-none d-block" href="#">
+                                SKN
+                            </a>
+                        </div>
+
+                        <!-- main nav icons -->
+                        <div class="col-sm-2 col-5 nav-icons">
+                            <ul
+                                class="d-flex justify-content-sm-center justify-content-start align-items-center gap-md-4 gap-2 mb-0 p-0">
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-search" id="search-icon"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-person" id="user-icon"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="">
+                                        <i class="bi bi-bag-check" id="cart-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- navbar end -->
+
+        <!-- banner srt -->
+        <div class="banner">
+            <div class="container-fluid p-0">
+                <div class="row g-0 align-items-center">
+                    <div class="col-12 banner-left">
+                        <h1> <span class="sk-main">SK</span> - Where Comfort Meets Confidence</h1>
+
+                        <a class="button" href="#">
+                            <i class="bi bi-arrow-right"></i>
+                            Shop with the trend
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- banner end -->
+
+    </header>
+    <!-- header end -->
+
+    <div class="banner-bg-img">
+        <img class="bg-image" src="./assets/images/banner-bg-3.png" alt="">
+    </div>
+
+    <!-- menu toggle srt -->
+    <div class="menu-icon-toggle">
+
+        <div class="title d-flex align-items-center justify-content-between my-4 px-3">
+            <h2 class="title-text mb-0">SK NightWear</h2>
+            <i class="bi bi-x-lg cross mb-0"></i>
+        </div>
+
+        <ul class="mb-0 gap-4 d-flex flex-column mt-4">
+            <li>
+                <a href="#" class="active">Home</a>
+            </li>
+
+            <li>
+                <a href="./about.html">About us</a>
+            </li>
+
+            <li>
+                <a href="#">Products</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- menu toggle end -->
 
     <!-- sunshine series (perfect style) -->
     <section class="mt-5 py-5">
         <div class="sunshine-main text-center">
             <span class="mb-3">SUNSHINE SERIES</span>
-            <h2 data-aos="fade-right">Perfect Your Style</h2>
+            <h2 data-aos="fade-right">Frequent Retail Sessions</h2>
             <p data-aos="fade-up" class="mt-3">It's a journey marked by repeated visits, a tapestry woven with diverse
                 encounters, discoveries, <br> and
                 the pleasure derived from navigating the ever-evolving retail realms.</p>
@@ -274,6 +430,164 @@
     </section>
     <!-- sunshine series (perfect style) -->
 
+    <!-- women collection srt -->
+    <section class=" w-Collection-main p-0">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 col-12 w-Collection-left d-flex align-items-center pt-4">
+                    <div class="row justify-content-md-between justify-content-start align-items-center">
+                        <div class="col-6 d-none d-md-block wc-left-image">
+                            <img class="" src="./assets/images/women-collection.png" alt="">
+                        </div>
+
+                        <div class="col-md-6 col-12 wc-left-content">
+                            <p class="">Women collection</p>
+
+                            <h4>Enjoy Savings of Up to 50% on Best selling Items!</h4>
+
+                            <button class="d-flex gap-2 align-items-center">Shop Now</button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-md-5 col-12 w-Collection-right d-flex flex-column align-items-md-center justify-content-md-center">
+
+                    <div class="text">
+                        <h4 class="join-now">Join Now</h4>
+                    </div>
+
+                    <video autoplay muted loop class="myVideo">
+                        <source src="./assets/videos/bg-video.mp4">
+                    </video>
+
+                    <div class="input d-flex flex-md-row flex-column align-items-start gap-md-3 align-items-md-end">
+                        <input type="text" name="" class="mb-0" placeholder="your email address">
+                        <button class="mb-0">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- women collection end -->
+
+    <!-- features and facility srt -->
+    <div class="features mt-5">
+        <div class="container-fluid">
+            <div class="row mt-4">
+
+                <div class="col-lg-6 col-md-6 col-12 feaures" data-aos-duration="1000">
+                    <h3 class="title">Features & Facility</h3>
+
+                    <div class="content">
+                        <div class="row">
+
+                            <div class="col-lg-6 feature-head">
+                                <i class="bi bi-truck f1-icon"></i>
+                                <h5 class="f1-title">Speedy Shipping</h5>
+                                <p class="f1-p">Join us in experiencing the convenience and efficiency of our rapid
+                                    delivery
+                                    services.</p>
+                            </div>
+
+                            <div class="col-lg-6 feature-head">
+                                <i class="bi bi-tags f1-icon"></i>
+                                <h5 class="f1-title">Brand Tags</h5>
+                                <p class="f1-p">Gateway to understanding the character and uniqueness of a brand in
+                                    a glance.</p>
+                            </div>
+
+                            <div class="col-lg-6 feature-head">
+                                <i class="bi bi-bag-check f1-icon"></i>
+                                <h5 class="f1-title">Online Retail</h5>
+                                <p class="f1-p">Converge to transform the way you shop and engage with the world of
+                                    commerce.</p>
+                            </div>
+
+                            <div class="col-lg-6 feature-head">
+                                <i class="bi bi-star f1-icon"></i>
+                                <h5 class="f1-title">Level of Excellence</h5>
+                                <p class="f1-p">It's a guiding principle, a relentless pursuit of mastery that
+                                    defines the very essence of distinction.</p>
+                            </div>
+
+                            <div class="col-lg-6 feature-head">
+                                <i class="bi bi-gem f1-icon"></i>
+                                <h5 class="f1-title">Luxurious Texture</h5>
+                                <p class="f1-p">Sumptuousness, elevating every moment with a tactile richness that
+                                    transcends the ordinary.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-12 mt-md-0 mt-5 questions px-4 px-lg-5 px-md-5"
+                    data-aos-duration="1000">
+                    <h3 class="title">Questions</h3>
+
+                    <div class="accordion mt-5">
+                        <div class="q1">
+                            <div class="q1-title d-flex justify-content-between">
+                                <h5>Approach in Action</h5>
+                                <h5 class="view">View</h5>
+                                <h5 class="close">Close</h5>
+                            </div>
+
+                            <p class="mt-4 q1-content">If for any reason you're not completely satisfied with your
+                                purchase, simply initiate the return within [number] days of receiving your order
+                            </p>
+
+                        </div>
+
+                        <div class="q1 mt-5">
+                            <div class="q1-title d-flex justify-content-between">
+                                <h5>Return Process</h5>
+                                <h5 class="view">View</h5>
+                                <h5 class="close">Close</h5>
+                            </div>
+
+                            <p class="mt-4 q1-content">Should you need to return an item for any reason, simply
+                                visit our website's "Returns" section or contact our customer service team within
+                                days of receiving your order.
+                            </p>
+
+                        </div>
+
+                        <div class="q1 mt-5">
+                            <div class="q1-title d-flex justify-content-between">
+                                <h5>Maximize Your Savings</h5>
+                                <h5 class="view">View</h5>
+                                <h5 class="close">Close</h5>
+                            </div>
+
+                            <p class="mt-4 q1-content">From seasonal discounts to member-only specials, we curate
+                                opportunities for you to enjoy your favorite products while saving significantly.
+                            </p>
+
+                        </div>
+
+                        <div class="q1 mt-5">
+                            <div class="q1-title d-flex justify-content-between">
+                                <h5>Smart Spending</h5>
+                                <h5 class="view">View</h5>
+                                <h5 class="close">Close</h5>
+                            </div>
+
+                            <p class="mt-4 q1-content">Focus on versatile, timeless pieces that transcend trends. A
+                                well-chosen classic coat or a quality handbag can effortlessly elevate multiple
+                                outfits, maximizing value over time.
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- features and facility end -->
 
     <!-- best collection -->
     <section>
@@ -380,10 +694,94 @@
     </section>
     <!-- best collection -->
 
+    <!-- shopping cart -->
+    <!-- <section> -->
+    <div class="shopping-cart-main">
+        <div class="shopping-cart-content-main">
+            <div class="shopping-cart-content d-flex align-items-center">
+                <p class="mb-0 py-2">Shopping Cart</p>
+                <a href="#" class="ms-auto" id="close-cart-icon"> <i class="bi bi-x-lg "></i></a>
+            </div>
+            <div class="wish-sentence text-center">
+                <span class="ms-3 mt-4 d-inline-block">No Products in the cart.</span>
+            </div>
+        </div>
+    </div>
+    <!-- </section> -->
+    <!-- shopping cart -->
 
-    <!-- footer -->
+    <!-- wishlist heart-->
     <section>
-        <div class="footer-main py-5 mt-5">
+        <div class="wishlist-main">
+            <div class="wishlist-content-main">
+                <div class="wishlist-content d-flex align-items-center">
+                    <p class="mb-0">Wishlist</p>
+                    <a href="#" id="heart-close-icon" class="ms-auto me-3 "><i
+                            class="bi bi-x-lg text-dark fw-bolder"></i></a>
+                </div>
+            </div>
+            <div class="wish-sentence text-center">
+                <span class="ms-3 mt-4 d-inline-block">There are no products on the Wishlist!</span>
+            </div>
+
+            <!-- <div class="wishlist-btn py-3 ">
+                    <a href="" class="">Wishlist Page</a>
+                </div> -->
+        </div>
+    </section>
+    <!-- wishlist heart -->
+
+    <!-- search bar -->
+    <section>
+        <div class="search-bar-main-main">
+            <div class="search-bar-content">
+                <div class="search-bar">
+                    <i id="search-input-icon" class="bi bi-search"></i>
+                    <input id="search-box" type="text" placeholder="Search Products" class="w-50">
+                </div>
+                <a href="#" id="search-close-icon"> <i class="bi bi-x-lg text-dark"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- search bar -->
+
+    <!-- User login  -->
+    <section>
+        <div class="form-main">
+            <div class="form-main-heading py-4 ps-3">
+                <a href="">Sign in</a>
+                <a href="#" id="user-close-icon"><i class="bi bi-x-lg"></i></a>
+            </div>
+            <div class="form-user-details mt-3 py-4 ps-4 pe-4">
+                <label class="" for="">Username or email <span class="text-danger">*</span></label>
+                <input class="d-block" id="username" type="text"> <br>
+
+                <label for="">Password <span class="text-danger">*</span> </label>
+                <input class="d-block" id="password" type="password">
+
+                <a class="d-inline-block mt-5" id="login" href="">Log in</a>
+                <a class="d-block text-center mt-3" id="lost-password" href="">Lost your password ?</a>
+
+                <!-- underline -->
+                <section>
+                    <div class="container py-5 p-5">
+                        <div class="row">
+                            <div class="border-sample"></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- underline -->
+                <div class="create-account text-center">
+                    <span class="text-center">No account yet ?</span> <a href="">Create an Account</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- User login  -->
+
+    <!-- footer srt -->
+    <section class="mt-5">
+        <div class="footer-main">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-12 " data-aos="fade-up" data-aos-duration="1000">
@@ -393,7 +791,8 @@
                             <p class="mt-3 mb-0 lh-lg">PO Box 1622 Colins Street West Victoria 8077 Australia
 
                                 <a class="d-block  mt-0" href="tel:+012 345 6789">+012 345 6789</a>
-                                <a class="mt-0" href="mailto:dhrumilshah71011@gmai.com"> info@retailflowfashion.com</a>
+                                <a class="mt-0" href="mailto:dhrumilshah71011@gmai.com">
+                                    info@retailflowfashion.com</a>
                             </p>
                             <div class="social-links mt-3 g-0">
                                 <span><a class="d-inline-block" href=""><i
@@ -451,51 +850,20 @@
 
         </div>
     </section>
-    <!-- footer -->
+    <!-- footer end -->
 
-    <!-- jquery -->
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/aos.js"></script>
-    <script src="./js/gsap.min.js"></script>
-    <script src="./js/prac.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <!-- <script src="./js/script.js"></script> -->
+    <!-- bootstrap script link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- slick carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick carousel js -->
 
-    <!-- gsap menu  -->
-    <script>
-        var menu = document.querySelector("#menu-icon")
-        var cross = document.querySelector("#menu-close-icon")
-        {
-            var lt = gsap.timeline()
-
-            lt.to(".menu-list-main", {
-                right: "0",
-                duration: 0.3,
-
-            });
-
-            lt.from(".menu-list-content a", {
-                opacity: 0
-            });
-            lt.from(".menu-list-items ul li", {
-                x: 90,
-                duration: 0.3,
-                stagger: 0.3,
-                opacity: 0
-            });
-            lt.pause();
-
-            menu.addEventListener("click", function () {
-                lt.play();
-            });
-            cross.addEventListener("click", function () {
-                lt.reverse();
-            })
-        }
-    </script>
-    <!-- gsap menu  -->
+    <!-- aos js -->
+    <script src="./assets/js/aos.js"></script>
+    <!-- aos js -->
 
     <!-- aos script -->
     <script>
@@ -503,212 +871,36 @@
     </script>
     <!-- aos script -->
 
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- gsap -->
-
-    <!-- for mens -->
-    <!-- <script>
-        $('.responsive').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            arrows: false,
-            draggable: true,
-            slidesToShow: 4,
-            slidesToScroll: 2,
-            prevArrow: '<button class="slick-prev custom-prev"><i class="fa fa-chevron-left"></i></button>',
-            nextArrow: '<button class="slick-next custom-next"><i class="fa fa-chevron-right"></i></button>',
-            dotsClass: 'slick-dots custom-dots', // Custom class for dots
-
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-
-    </script> -->
-
-    <!-- <script>
-        $('.center').slick({
-            dots: true,
-            infinite: true,
-            speed: 300,
-            arrows: false,
-            draggable: true,
-            slidesToShow: 5,
-            slidesToScroll: 2,
-            // centerMode: true,
-            centerPadding: '150px',
-            prevArrow: '<button class="slick-prev custom-prev"><i class="fa fa-chevron-left"></i></button>',
-            nextArrow: '<button class="slick-next custom-next"><i class="fa fa-chevron-right"></i></button>',
-            dotsClass: 'slick-dots custom-dots', // Custom class for dots
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        // centerMode: true,
-                        centerPadding: '140px',
-                        slidesToShow: 1
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        // centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-    </script> -->
-    <script>
-        $('.center').slick({
-            dots: true,
-            centerMode: true,
-            centerPadding: '60px',
-            arrows: false,
-            infinite: true,
-            speed: 300,
-            autoplay: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            prevArrow: '<button class="slick-prev custom-prev"><i class="fa fa-chevron-left"></i></button>',
-            nextArrow: '<button class="slick-next custom-next"><i class="fa fa-chevron-right"></i></button>',
-            responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-    </script>
-    <!-- for mens -->
+    <!-- jquery cdn -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
 
     <script>
         $(document).ready(function () {
-            $("#menu-icon").click(function () {
-                $(".menu-list-main").addClass("menu-list-main-transform");
-                return false;
-            });
-            $("#menu-close-icon").click(function () {
-                $(".menu-list-main").removeClass("menu-list-main-transform");
+            $("#search-icon").click(function () {
+                $(".search-bar-main-main").addClass("search-bar-main-main");
                 return false;
             });
         });
-        // menu
+
+        $(document).ready(function () {
+            $("#search-close-icon").click(function () {
+                $(".search-bar-main-main").removeClass("search-bar-main-main-transform");
+            });
+        });
     </script>
 
+    <!-- main js -->
+    <script src="./assets/js/script.js"></script>
 
-
+    <!-- scroll to section on reload srt  -->
     <script>
-        $('.men-slider').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            autoplay: true,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-        $('.women-slider').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            autoplay: true,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
-                    }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
+        jQuery("html").animate({
+            scrollTop: jQuery(".sunshine-main").offset().top - 20
         });
     </script>
+    <!-- scroll to section on reload end -->
 
 
 </body>
+
+</html>

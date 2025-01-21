@@ -112,6 +112,12 @@ document.addEventListener("DOMContentLoaded", function () {
 $(document).ready(function () {
     $("#search-icon").click(function () {
         $(".search-bar-main-main").addClass("search-bar-main-main-transform");
+        return false;
+    });
+
+    $("#search-icon").click(function () {
+        $(".search-bar-main-main").removeClass("search-bar-main-main-transform");
+        return false;
     });
 });
 
@@ -120,7 +126,7 @@ $(document).ready(function () {
 // cart icon
 $(document).ready(function () {
     $("#cart-icon").click(function () {
-        $(".shopping-cart-main").addClass("shopping-cart-main");
+        $(".shopping-cart-main").addClass("shopping-cart-main-transform");
         return false;
     });
 });
