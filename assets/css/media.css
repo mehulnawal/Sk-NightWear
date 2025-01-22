@@ -146,7 +146,9 @@
     }
 
     .meet {
-        margin: 100px 0px !important;
+        p {
+            width: 100% !important;
+        }
     }
 
     .w-Collection-right {
@@ -158,6 +160,14 @@
         left: 30px;
     }
 
+    .menu-icon-toggle {
+        height: fit-content !important;
+    }
+
+    .get-in-touch-right {
+        padding-left: 0px !important;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -165,9 +175,6 @@
         display: block;
     }
 
-    .meet {
-        margin-top: 180px !important;
-    }
 
     .w-Collection-right {
         .text {
@@ -216,6 +223,22 @@
     header {
         height: fit-content !important;
     }
+
+    .banner-bg-img {
+        display: none !important;
+    }
+
+    .menu-icon-toggle {
+        height: fit-content !important;
+    }
+
+    .shopping-cart-main {
+        width: 100% !important;
+    }
+
+    #search-input-icon {
+        left: 20% !important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -226,10 +249,10 @@
             font-size: 40px !important;
             width: 100% !important;
         }
-    }
 
-    .banner-bg-img {
-        display: none;
+        .button {
+            font-size: 16px !important;
+        }
     }
 
     .form-main {
@@ -240,10 +263,6 @@
         width: 100% !important;
     }
 
-    .logo-main img {
-        /* margin-left: 130px !important; */
-    }
-
     .header-text span {
         font-size: 11px !important;
         display: inline-block;
@@ -252,6 +271,10 @@
     .menu-icon-toggle {
         width: 100% !important;
     }
+
+    .menu-icon-toggle {
+        height: 100vh !important;
+    }
 }
 
 @media (max-width: 430px) {
@@ -259,8 +282,9 @@
         font-size: 20px !important;
     }
 
-    .logo-main img {
-        /* margin-left: 130px !important; */
+    .logo-main::after {
+        top: -19px !important;
+        height: 64px;
     }
 
     .sunshine-main h2 {
@@ -279,4 +303,21 @@
     .shop-now-main a {
         padding: 20px 100px;
     }
+
+    .nav-icons {
+        ul {
+            gap: 2px !important;
+        }
+    }
+}
+
+
+@media (max-width: 340px) {
+
+    .nav-links {
+        .logo {
+            margin-left: auto !important;
+        }
+    }
+
 }

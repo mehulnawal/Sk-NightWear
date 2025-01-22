@@ -115,7 +115,7 @@ $(document).ready(function () {
         return false;
     });
 
-    $("#search-icon").click(function () {
+    $("#search-close-icon").click(function () {
         $(".search-bar-main-main").removeClass("search-bar-main-main-transform");
         return false;
     });

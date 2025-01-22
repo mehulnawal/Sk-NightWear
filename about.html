@@ -10,6 +10,9 @@
     <!-- Favicon -->
     <link rel="icon" href="./assets/images/logo.png">
 
+    <!-- aos link -->
+    <link rel="stylesheet" href="./assets/css/aos.css">
+
     <!-- font awesome cnd -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -43,8 +46,7 @@
                 <div class="nav-head py-2">
                     <div class="row align-items-center h-100">
 
-                        <div
-                            class="col-lg-2 col-md-2 col-sm-4 col-3 d-lg-flex justify-content-center align-items-center gap-3 logo-main">
+                        <div class="col-md-3 col-5 d-lg-flex justify-content-center align-items-center gap-3 logo-main">
 
                             <!-- main logo -->
                             <a draggable="false" class="logo m-0 d-lg-block d-none" href="#">
@@ -64,7 +66,7 @@
                         <div class="col-lg-7 col-md-6 col-5 nav-links d-flex justify-content-center">
                             <ul class="d-flex justify-content-center mb-0 d-lg-flex d-none gap-5">
                                 <li>
-                                    <a href="./index.html" class="">Home</a>
+                                    <a href="./index.html">Home</a>
                                 </li>
 
                                 <li>
@@ -85,20 +87,20 @@
                             </ul>
 
                             <!-- responsive logo -->
-                            <a draggable="false" class="logo m-0 d-lg-none d-sm-block d-none" href="#">
+                            <a draggable="false" class="logo m-0 d-lg-none d-sm-block d-none" href="./index.html">
                                 SK NightWear
                             </a>
 
                             <!-- responsive logo -->
-                            <a draggable="false" class="logo m-0 d-sm-none d-block" href="#">
+                            <a draggable="false" class="logo m-0 d-sm-none d-inline-block" href="./index.html">
                                 SKN
                             </a>
                         </div>
 
                         <!-- main nav icons -->
-                        <div class="col-lg-2 col-2 nav-icons mx-auto">
+                        <div class="col-sm-2 col-3 nav-icons">
                             <ul
-                                class="d-flex justify-content-sm-center justify-content-start align-items-center gap-md-4 gap-2 mb-0 p-0">
+                                class="d-flex justify-content-sm-center justify-content-start align-items-center gap-md-4 mb-0 p-0">
                                 <li>
                                     <a href="">
                                         <i class="bi bi-search" id="search-icon"></i>
@@ -167,15 +169,15 @@
                 </li>
 
                 <li>
-                    <a href="#">Products</a>
+                    <a href="./shop.html">Shop</a>
                 </li>
 
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="./collection.html">Collection</a>
                 </li>
 
                 <li>
-                    <a href="#">Contact</a>
+                    <a href="./contact.html">Contact</a>
                 </li>
             </ul>
         </div>
@@ -191,7 +193,8 @@
             <div class="container-fluid">
                 <div class="row justify-content-between w-100 align-items-start">
 
-                    <div draggable="false" class="col-lg-4 col-md-6 col-12 design-left">
+                    <div draggable="false" class="col-lg-4 col-md-6 col-12 design-left" data-aos="fade-up"
+                        data-aos-duration="1000">
                         <p class="Design-Quality">Design & Quality</p>
                         <h2 class="d-inline-block">Discover Our Shop</h2>
 
@@ -209,11 +212,13 @@
                         <img class="design-2-img img-fluid" src="./assets/images/design.jpg" alt="">
                     </div>
 
-                    <div class="col-lg-4 col-md-6 d-md-flex justify-content-center design-center d-none">
+                    <div class="col-lg-4 col-md-6 d-md-flex justify-content-center design-center d-none"
+                        data-aos="fade-up" data-aos-duration="1000">
                         <img class="design-center" src="./assets/images/design-center-img.png" alt="">
                     </div>
 
-                    <div class="col-lg-4 col-md-12 d-flex design-end justify-content-start justify-content-lg-end">
+                    <div class="col-lg-4 col-md-12 d-flex design-end justify-content-start justify-content-lg-end"
+                        data-aos="fade-up" data-aos-duration="1000">
                         <div class="design-end-inner">
 
                             <div class="d-lg-block d-flex flex-wrap align-items-center">
@@ -242,7 +247,7 @@
         <!-- design end -->
 
         <!-- embrace design excellence srt -->
-        <div class="embrace d-flex align-items-center">
+        <div class="embrace d-flex align-items-center" data-aos="zoom-in" data-aos-duration="1000">
             <div class="container-fluid">
                 <div class="row d-flex justify-content-center align-items-center">
                     <div class="col-md-7 col-12 embrace-body">
@@ -258,7 +263,7 @@
         <!-- embrace design excellence end -->
 
         <!-- women collection srt -->
-        <section class=" w-Collection-main p-0">
+        <section class="w-Collection-main p-0" data-aos="fade-up" data-aos-duration="1000">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-7 col-12 w-Collection-left d-flex align-items-center pt-4">
@@ -302,7 +307,7 @@
         <!-- meet our squad srt -->
         <div class="meet mt-5">
             <div class="container-fluid">
-                <div class="meet-title">
+                <div class="meet-title" data-aos="zoom-in" data-aos-duration="1000">
                     <h3>Meet Our Squad</h3>
 
                     <p>Individuals comprising a team or community. It's an introduction to the personalities, skills,
@@ -311,7 +316,7 @@
                 </div>
 
                 <div class="row mt-5">
-                    <div class="col-lg-4 col-md-6 col-12">
+                    <div class="col-lg-4 col-md-6 col-12" data-aos="fade-up" data-aos-duration="1000">
                         <div class="body text-center">
                             <div class="col-6 mx-auto">
                                 <img class="img-fluid" src="./assets/images/team-1.jpg" alt="">
@@ -342,7 +347,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12 mt-md-0 mt-4">
+                    <div class="col-lg-4 col-md-6 col-12 mt-md-0 mt-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="body ">
                             <div class="col-6 mx-auto">
                                 <img class="img-fluid" src="./assets/images/team-1.jpg" alt="">
@@ -373,7 +378,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12 mt-lg-0 mt-4">
+                    <div class="col-lg-4 col-md-6 col-12 mt-lg-0 mt-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="body">
                             <div class="col-6 mx-auto">
                                 <img class="img-fluid" src="./assets/images/team-1.jpg" alt="">
@@ -404,7 +409,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12 mt-4">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="body">
                             <div class="col-6 mx-auto">
                                 <img class="img-fluid" src="./assets/images/team-1.jpg" alt="">
@@ -435,7 +440,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12 mt-4">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="body">
                             <div class="col-6 mx-auto">
                                 <img class="img-fluid" src="./assets/images/team-1.jpg" alt="">
@@ -466,7 +471,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 col-12 mt-4">
+                    <div class="col-lg-4 col-md-6 col-12 mt-4" data-aos="fade-up" data-aos-duration="1000">
                         <div class="body">
                             <div class="col-6 mx-auto">
                                 <img class="img-fluid" src="./assets/images/team-1.jpg" alt="">
@@ -539,11 +544,11 @@
             <div class="container-fluid">
                 <div class="row d-flex align-items-start">
 
-                    <div class="col-6 d-md-block d-none vh-100">
+                    <div class="col-6 d-md-block d-none vh-100" data-aos="fade-up" data-aos-duration="1000">
                         <div class="get-in-touch-left"></div>
                     </div>
 
-                    <div class="col-md-6 col-12">
+                    <div class="col-md-6 col-12" data-aos="fade-up" data-aos-duration="1000">
                         <div class="get-in-touch-right">
                             <h4>Get in Touch. <br /> Get Updates.</h4>
 
@@ -718,7 +723,7 @@
                 <div class="underline mt-5">
 
                 </div>
-                <div class="copyright text-center mt-5 text-white">
+                <div class="copyright text-center mt-5 text-white pb-4">
                     <p class="mb-0">Copyright © RetailFlow | Designed by VictorFlow - Powered by Webflow</p>
                 </div>
             </div>

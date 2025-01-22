@@ -10,6 +10,7 @@
 
 /* syncopate */
 @import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
 /* syncopate */
 :root {
   --grey: #535051;
@@ -18,11 +19,13 @@
   --jost: "Jost", serif;
   --syncopate: "Syncopate", serif;
 }
+
 body,
 html {
   /* background-color: black; */
   overflow-x: hidden;
 }
+
 ul li {
   list-style: none;
 }
@@ -32,32 +35,43 @@ a {
 }
 
 /* collection */
+.collection-main {
+  z-index: 1;
+}
+
 .collection-content p {
   font-family: var(--font_hanken);
   color: #133447;
   font-size: 30px;
 }
+
 .collection-content a {
   transition: all ease 0.3s;
 }
+
 .collection-content a:hover {
   color: #e2bd99;
 }
+
 .collection-content span {
   font-family: var(--jost);
   text-transform: uppercase;
   letter-spacing: 4px;
 }
+
 .collection-content a {
   color: #133447;
 }
+
 .collection-img-main {
   overflow: hidden;
 }
+
 .collection-img {
   border: 1px solid white;
   transition: all ease 0.3s;
 }
+
 .collection-img:hover {
   transform: scale(1.1);
 }
@@ -67,9 +81,11 @@ a {
 .footer-main {
   background-color: #133447;
 }
+
 .footer-content {
   color: white;
 }
+
 .footer-content a {
   color: white;
   display: block;
@@ -78,18 +94,22 @@ a {
   font-family: "Hanken Grotesk", serif;
   width: fit-content;
 }
+
 .footer-content h4 {
   font-family: "Hanken Grotesk", serif;
   font-weight: 400;
 }
+
 .footer-content h2 {
   font-family: "Elsie Swash Caps", serif;
   font-size: 35px;
   cursor: pointer;
 }
+
 .footer-content a:hover {
   color: #e2bd99;
 }
+
 .footer-email {
   padding: 20px 25px;
   background-color: transparent;
@@ -98,12 +118,15 @@ a {
   outline: none;
   color: white;
 }
+
 .footer-email::placeholder {
   color: white;
 }
+
 .footer-email:focus {
   border: 1px solid #477d9c;
 }
+
 .footer-mail a {
   padding: 20px 40px;
   background-color: #e2bd99;
@@ -112,12 +135,14 @@ a {
   color: #133447;
   border: 1px solid #e2bd99;
 }
+
 .footer-mail a:hover {
   background-color: #133447;
   border: 1px solid #477d9c;
   color: white;
   font-size: 16px;
 }
+
 .footer-content span a {
   background-color: #e2bd99;
   color: #133447;
@@ -126,20 +151,24 @@ a {
   border: 1px solid #e2bd99;
   /* margin: 12px; */
 }
+
 .footer-content span a:hover {
   background-color: transparent;
   border: 1px solid #477d9c;
   color: white;
 }
+
 .footer-logo p {
   font-family: "Hanken Grotesk", serif;
   /* font-size: 17px; */
   /* letter-spacing: 1px; */
 }
+
 .underline {
   border: 1px solid #477d9c;
   opacity: 0.2;
   width: 90%;
   margin: 0 auto;
 }
+
 /* footer */

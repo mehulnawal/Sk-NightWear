@@ -149,6 +149,12 @@ header {
         }
 
         .nav-icons {
+            margin: 0px auto;
+
+            ul {
+                gap: 8px;
+            }
+
             i {
                 color: #e2bd99;
                 font-size: 20px;
@@ -266,6 +272,15 @@ header {
 /* bg-img end */
 
 /* menu srt */
+.menu-list {
+    z-index: 2;
+}
+
+.menu1,
+.menu2 {
+    z-index: 1;
+}
+
 .menu-icon-toggle {
     height: 100vh;
     width: 380px;
@@ -920,10 +935,9 @@ label {
 
 /* search */
 #search-input-icon {
-    background-color: #30373e;
-    padding: 12px 15px;
+    background-color: #8A5C40;
+    padding: 12.8px 15px;
     text-align: center;
-    /* right: 0; */
     color: white;
     top: 50%;
     left: 23.5%;
@@ -951,7 +965,7 @@ label {
 }
 
 .search-bar-main-main-transform {
-    transform: translateX(0%);
+    transform: translateY(0%);
 }
 
 .search-bar-main {
