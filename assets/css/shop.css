@@ -329,7 +329,72 @@ a {
   color: white;
 }
 
-/* best collection */
+/* best collection end*/
+
+/* features and facility srt */
+.features {
+  font-family: var(--jost);
+
+  .title {
+    font-family: var(--elsi-font);
+    font-size: 38px;
+  }
+
+  .content {
+    .feature-head {
+      margin-top: 20px;
+
+      .f1-icon {
+        font-size: 43px;
+        color: #E4C09E;
+        font-weight: normal;
+      }
+
+      .f1-title {
+        font-weight: 400;
+        margin: 13px 0px 15px 0px;
+        font-size: 22px;
+      }
+
+      .f1-p {
+        font-size: 16px;
+      }
+
+    }
+  }
+
+  .questions {
+    /* padding: 0px 40px 0px 50px; */
+
+    .q1 {
+      font-family: var(--jost);
+
+      .q1-title {
+        border-top: 1px solid #d6d6d6;
+        padding-top: 36px;
+        cursor: pointer;
+        position: relative;
+
+        h5 {
+          font-weight: normal;
+        }
+
+        .close {
+          /* position: absolute; */
+          /* right: 0px; */
+          display: none;
+          /* transition: all 0.6s ease-in-out; */
+        }
+      }
+
+      .q1-content {
+        display: none;
+      }
+    }
+  }
+}
+
+/* features and facility end */
 
 
 /* footer */

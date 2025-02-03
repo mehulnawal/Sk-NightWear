@@ -686,10 +686,10 @@ main {
                     }
 
                     .close {
-                        position: absolute;
-                        right: 0px;
+                        /* position: absolute; */
+                        /* right: 0px; */
                         display: none;
-                        transition: all 0.6s ease-in-out;
+                        /* transition: all 0.6s ease-in-out; */
                     }
                 }
 
@@ -701,8 +701,6 @@ main {
     }
 
     /* features and facility end */
-
-    /*  */
 
     /* best collection */
     .best-collection {

@@ -1,0 +1,83 @@
+/* Elsie Swash Caps font*/
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
+/* Elsie Swash Caps font*/
+
+/* jost srt */
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* jost end */
+
+/* common css srt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #535051;
+    --font_hanken: "Hanken Grotesk", serif;
+    --elsi-font: "Elsie Swash Caps", serif;
+    --jost: "Jost", serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* common css end */
+
+/* section1 srt */
+.register-main {
+    background-color: #F0E9E1;
+    text-align: center;
+    padding-top: 20px;
+    height: 100vh;
+
+    h1 {
+        font-size: 60px;
+        font-family: var(--elsi-font);
+        color: #74373F;
+        margin: 20px 0px 30px 0px;
+    }
+
+    .register-form {
+
+        .form-input {
+            margin: 20px 0px;
+            width: 60%;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            border: 1px solid black;
+            outline: none;
+        }
+
+        .form-input:focus {
+            border: 3px solid green;
+            outline: none;
+        }
+
+        #submit {
+            margin: 2px 0px;
+            font-size: 22px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid black;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #submit:hover {
+            background-color: green;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+    }
+
+}
+
+/* section1 end */

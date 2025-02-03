@@ -30,6 +30,7 @@ $(document).ready(function () {
         const content = parent.find(".q1-content");
         const view = parent.find(".view");
         const close = parent.find(".close");
+        // $(".view").fadeOut(200);
 
         // Close other sections
         $(".q1")
@@ -37,26 +38,29 @@ $(document).ready(function () {
             .find(".q1-content:visible")
             .slideUp(300) // Smoothly close
             .parent()
-            .find(".view").fadeIn(200); // Show "View"
+            .find(".view").css("display", "block"); // Show "View"
         $(".q1")
             .not(parent)
-            .find(".close").fadeOut(200); // Hide "Close"
+            .find(".close").css("display", "none"); // Hide "Close"
 
         // Toggle current section
         if (content.is(":visible")) {
             content.slideUp(300);
-            view.fadeIn(200);
-            close.fadeOut(200);
+            view.css("display", "block");
+            close.css("display", "none");
         } else {
             content.slideDown(300);
-            view.fadeOut(200);
-            close.fadeIn(200);
+            view.css("display", "block");
+            close.css("display", "none");
         }
+    });
+
+    $(".q1-title").click(function () {
+
     });
 });
 
 // accordion end
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const categories = document.querySelectorAll('.categories-content li');
@@ -77,8 +81,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
 
 
 $(document).ready(function () {
