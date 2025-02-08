@@ -292,6 +292,18 @@
     .menu-icon-toggle {
         height: 100vh !important;
     }
+
+    .nav-icons {
+        ul {
+            li {
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .logo {
+        margin-left: 40px !important;
+    }
 }
 
 @media (max-width: 430px) {
@@ -335,6 +347,18 @@
         .logo {
             margin-left: auto !important;
         }
+    }
+
+    .nav-icons {
+        ul {
+            li {
+                margin-left: 1px !important;
+            }
+        }
+    }
+
+    .logo {
+        margin-left: 40px !important;
     }
 
 }
