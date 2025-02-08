@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Italianno&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Italiana&family=Italianno&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Elsie Swash Caps font*/
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap");
+/* Elsie Swash Caps font*/
+
+/* jost srt */
+@import url("https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+/* jost end */
+
+/* syncopate */
+@import url("https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap");
+
+/* syncopate */
+:root {
+  --grey: #535051;
+  --font_hanken: "Hanken Grotesk", serif;
+  --elsi-font: "Elsie Swash Caps", serif;
+  --jost: "Jost", serif;
+  --syncopate: "Syncopate", serif;
+}
+
+body,
+html {
+  /* background-color: black; */
+  overflow-x: hidden;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header srt */
+header {
+  background-color: #32586D;
+  color: black !important;
+  padding: 20px;
+  height: 100% !important;
+  position: relative;
+  /* z-index: 1; */
+}
+
+/* collection */
+.collection-main {
+  z-index: 1;
+}
+
+.collection-content p {
+  font-family: var(--font_hanken);
+  color: #133447;
+  font-size: 30px;
+}
+
+.collection-content a {
+  transition: all ease 0.3s;
+}
+
+.collection-content a:hover {
+  color: #e2bd99;
+}
+
+.collection-content span {
+  font-family: var(--jost);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.collection-content a {
+  color: #133447;
+}
+
+.collection-img-main {
+  overflow: hidden;
+}
+
+.collection-img {
+  border: 1px solid white;
+  transition: all ease 0.3s;
+}
+
+.collection-img:hover {
+  transform: scale(1.1);
+}
+
+/* collection */
+/* footer */
+.footer-main {
+  background-color: #133447;
+}
+
+.footer-content {
+  color: white;
+}
+
+.footer-content a {
+  color: white;
+  display: block;
+  margin-top: 15px;
+  transition: all ease 0.3s;
+  font-family: "Hanken Grotesk", serif;
+  width: fit-content;
+}
+
+.footer-content h4 {
+  font-family: "Hanken Grotesk", serif;
+  font-weight: 400;
+}
+
+.footer-content h2 {
+  font-family: "Elsie Swash Caps", serif;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.footer-content a:hover {
+  color: #e2bd99;
+}
+
+.footer-email {
+  padding: 20px 25px;
+  background-color: transparent;
+  border: 1px solid #e2bd99;
+  transition: all ease 0.3s;
+  outline: none;
+  color: white;
+}
+
+.footer-email::placeholder {
+  color: white;
+}
+
+.footer-email:focus {
+  border: 1px solid #477d9c;
+}
+
+.footer-mail a {
+  padding: 20px 40px;
+  background-color: #e2bd99;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+  color: #133447;
+  border: 1px solid #e2bd99;
+}
+
+.footer-mail a:hover {
+  background-color: #133447;
+  border: 1px solid #477d9c;
+  color: white;
+  font-size: 16px;
+}
+
+.footer-content span a {
+  background-color: #e2bd99;
+  color: #133447;
+  padding: 12px 15px;
+  transition: all ease 0.3s;
+  border: 1px solid #e2bd99;
+  /* margin: 12px; */
+}
+
+.footer-content span a:hover {
+  background-color: transparent;
+  border: 1px solid #477d9c;
+  color: white;
+}
+
+.footer-logo p {
+  font-family: "Hanken Grotesk", serif;
+  /* font-size: 17px; */
+  /* letter-spacing: 1px; */
+}
+
+.underline {
+  border: 1px solid #477d9c;
+  opacity: 0.2;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* footer */
