@@ -75,6 +75,7 @@ main {
     /* category srt */
     .category {
         gap: 20px;
+        flex-wrap: wrap;
 
         .name {
             background-color: #000000;
@@ -121,6 +122,8 @@ main {
     /* category end */
 
     .packs {
+        position: relative;
+
         .packs-body {
             height: 100%;
             background-color: #F6F6F6;
@@ -187,6 +190,19 @@ main {
                 }
             }
 
+            .filter-toggle-li {
+                cursor: pointer;
+                width: fit-content;
+
+                .no-filter-applied {
+                    margin-left: 10px;
+                    border: 2px solid black;
+                    border-radius: 50%;
+                    padding: 2px 6px;
+                    font-size: 10px;
+                }
+            }
+
             .packs-right {
                 width: calc(100% - 300px);
                 height: 100%;
@@ -248,6 +264,79 @@ main {
                 }
             }
         }
+    }
+
+    .filter-toggle {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        background-color: white;
+        width: 300px;
+        height: 700px;
+        overflow-y: scroll;
+        z-index: 99;
+        padding: 10px 10px;
+        transform: translateX(-100%);
+        transition: all 0.4s ease-in-out;
+
+        .close {
+            border-bottom: 1px solid black;
+        }
+
+        .packs-left {
+            /* overflow-y: scroll; */
+            /* background-color: rebeccapurple; */
+            color: #000;
+            /* padding: 10px 10px; */
+            height: 100%;
+            width: 100%;
+
+            ul {
+
+                .options-li {
+                    cursor: pointer;
+                    padding: 0px 10px 20px 0px;
+                    border-bottom: 1px solid #bfb8b8;
+                }
+
+                .sort-by-dropdown,
+                .size-dropdown {
+                    padding: 0px 5px;
+                    visibility: hidden;
+                    opacity: 0;
+                    height: 0px;
+                    margin: 0px 0px;
+                    transition: all 0.4s linear;
+                    background-color: #fff;
+                    padding: 0px 0px;
+
+                    .checkbox {
+                        transform: scale(1.16);
+                    }
+
+                    h6 {
+                        font-size: 18px;
+                    }
+                }
+
+                .li-dropdown-toggle {
+                    visibility: visible;
+                    height: 100%;
+                    padding: 25px 10px;
+                    opacity: 1;
+                }
+
+                .angle-right-icon {
+                    font-size: 21px;
+                    color: #8F8F8F;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .filter-toggle-addClass {
+        transform: translateX(0%);
     }
 }
 

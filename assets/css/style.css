@@ -54,9 +54,18 @@ header {
     background-color: #32586D;
     color: black !important;
     padding: 20px;
-    height: 100vh!important;
+    height: 100vh !important;
     position: relative;
     /* z-index: 1; */
+
+    .nav-icons,
+    .nav-links {
+        ul {
+            li {
+                cursor: pointer;
+            }
+        }
+    }
 }
 
 /* navbar srt */

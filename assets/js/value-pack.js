@@ -25,4 +25,16 @@ $(document).ready(function () {
 });
 
 
+// filter toggle 
+$(document).ready(function () {
+
+    $(".filter-toggle-li").click(function () {
+        $(".filter-toggle").addClass("filter-toggle-addClass");
+    });
+
+    $(".close").click(function () {
+        $(".filter-toggle").removeClass("filter-toggle-addClass");
+    });
+});
+
 
