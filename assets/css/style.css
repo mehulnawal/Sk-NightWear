@@ -807,6 +807,38 @@ main {
 
     /* best collection */
 
+    /* brands logo scrolling srt */
+    @keyframes infiniteScroll {
+        from {
+            transform: translateX(0)
+        }
+
+        to {
+            transform: translateX(-50%)
+        }
+    }
+
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .horizontal-scrolling-items {
+        display: flex;
+        font-size: 40px;
+        width: 2600px;
+        animation-name: infiniteScroll;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    .horizontal-scrolling-items__item {
+        white-space: nowrap;
+    }
+
+    /* brands logo scrolling end */
+
 
 }
 
@@ -1237,4 +1269,59 @@ label {
 #back-to-login-from-register {
     color: #30373e;
     text-decoration: underline;
+}
+
+
+header {
+    /* position: relative !important; */
+}
+
+.shop-li {
+    /* transition: all 0.6s ease-in-out; */
+    /* padding-bottom: 20px; */
+}
+
+.shop-hover {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    color: #fff !important;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 1000px;
+    background-color: #33596E !important;
+    z-index: 99;
+    font-family: var(--jost);
+    /* height: 0px; */
+    height: fit-content;
+    opacity: 0px;
+    visibility: hidden;
+    transition: all 0.2s linear;
+    box-shadow: 2px 2px 2px black;
+
+    .hover-men-img {
+        width: 90px;
+    }
+
+    a {
+        color: #fff !important;
+        text-decoration: none;
+    }
+
+    ul {
+        li {
+            margin-top: 10px !important;
+
+            a {
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.shop-li:hover~.shop-hover {
+    opacity: 1;
+    visibility: visible;
+    /* height: fit-content; */
 }
