@@ -233,6 +233,7 @@ h1 {
         }
 
         .dropdown {
+            height: 100vh;
             border-radius: 10px;
             display: none;
         }
