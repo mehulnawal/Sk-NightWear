@@ -314,7 +314,9 @@ h1 {
         .product-img {
             width: 100%;
             border-radius: 15px;
-            overflow: hidden;
+            margin: auto 0px;
+            display: flex;
+            justify-content: center;
         }
 
         .heart-icon {
