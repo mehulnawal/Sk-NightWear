@@ -153,11 +153,36 @@ h1 {
 
             .popularity-dropdown {
                 position: absolute;
-                bottom: -2%;
-                right: 0px;
-                z-index: 2;
+                top: 70%;
+                right: -50px;
+                z-index: 10;
                 background-color: #fff;
                 border: 1px solid #000;
+                border-radius: 10px;
+                padding: 0px 0px;
+                visibility: hidden;
+                opacity: 0;
+
+                a {
+                    color: #000;
+                    font-weight: 500;
+                    font-family: var(--jost);
+                    padding: 0px 7px;
+                    border-radius: 4px;
+                }
+
+                li:hover,
+                li:hover a {
+                    color: #fff;
+                    background-color: #32586D;
+                    font-weight: 500;
+                }
+            }
+
+            .popularity-dropdown-toggle {
+                padding: 17px 17px;
+                visibility: visible;
+                opacity: 1;
             }
         }
     }
@@ -266,8 +291,6 @@ h1 {
         }
 
     }
-
-
 }
 
 .toggle-filter-side {

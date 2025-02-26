@@ -21,3 +21,13 @@ $(document).ready(function () {
         $(this).siblings(".dropdown").toggle();
     })
 });
+
+// popularity-dropdown-toggle
+$(document).ready(function () {
+    $(".sort-by-brand").click(function () {
+        $(".popularity-dropdown").toggleClass("popularity-dropdown-toggle");
+        $(".angle-up-icon").toggle();
+        $(".angle-down-icon").toggle();
+    });
+});
+

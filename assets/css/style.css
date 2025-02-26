@@ -1320,8 +1320,8 @@ header {
     }
 }
 
-.shop-li:hover~.shop-hover {
+.shop-li:hover+.shop-hover,
+.shop-hover:hover {
     opacity: 1;
     visibility: visible;
-    /* height: fit-content; */
 }

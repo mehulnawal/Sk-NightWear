@@ -251,11 +251,10 @@
         }
     }
 
-    .filters {
-        .dropdown {
-            width: 100% !important;
-        }
+    .toggle-filter-side {
+        width: 400px !important;
     }
+
 }
 
 @media (max-width: 576px) {
@@ -309,6 +308,10 @@
 
     .logo {
         margin-left: 40px !important;
+    }
+
+    .toggle-filter-side {
+        width: 100% !important;
     }
 }
 
