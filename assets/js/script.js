@@ -57,7 +57,6 @@ $(document).ready(function () {
 
 // accordion end
 
-
 document.addEventListener("DOMContentLoaded", function () {
     const categories = document.querySelectorAll('.categories-content li');
 
@@ -77,8 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
 
 
 $(document).ready(function () {
@@ -130,6 +127,7 @@ $(document).ready(function () {
         return false;
     });
 });
+
 $(document).ready(function () {
     $("#close-cart-icon").click(function () {
         $(".shopping-cart-main").removeClass("shopping-cart-main-transform");

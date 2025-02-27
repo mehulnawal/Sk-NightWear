@@ -1,0 +1,160 @@
+<!-- menu toggle srt -->
+<div class="menu-icon-toggle">
+
+    <div class="row title d-flex align-items-start justify-content-between my-4 px-3">
+        <div class="d-flex justify-content-end col-8">
+            <!-- <h2 class="title-text mb-0">SK NightWear</h2> -->
+            <img class="img-fluid menu-logo" src="./assets/images/logo.png" alt="">
+        </div>
+
+        <div class="col-4 d-flex justify-content-end">
+            <i class="bi bi-x-lg cross mb-0"></i>
+        </div>
+    </div>
+    <ul class="mb-0 gap-4 d-flex flex-column mt-4">
+        <li>
+            <a href="./index.html" class="active">Home</a>
+        </li>
+
+        <li>
+            <a href="./shop.html">Shop</a>
+        </li>
+
+        <li>
+            <a href="././value_pack.html">Value pack</a>
+        </li>
+
+        <li>
+            <a href="./collection.html">Collection</a>
+        </li>
+
+        <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+    </ul>
+</div>
+<!-- menu toggle end -->
+
+<!-- shopping cart -->
+<div class="shopping-cart-main" id="shoppingReuse">
+    <div class="shopping-cart-content-main">
+        <div class="shopping-cart-content d-flex align-items-center">
+            <p class="mb-0 py-2">Shopping Cart</p>
+            <a href="#" class="ms-auto" id="close-cart-icon"> <i class="bi bi-x-lg "></i></a>
+        </div>
+        <div class="wish-sentence text-center">
+            <span class="ms-3 mt-4 d-inline-block">No Products in the cart.</span>
+        </div>
+    </div>
+</div>
+<!-- shopping cart -->
+
+<!-- wishlist heart-->
+<section id="wishlistReuse">
+    <div class="wishlist-main">
+        <div class="wishlist-content-main">
+            <div class="wishlist-content d-flex align-items-center">
+                <p class="mb-0">Wishlist</p>
+                <a href="#" id="heart-close-icon" class="ms-auto me-3 "><i
+                        class="bi bi-x-lg text-dark fw-bolder"></i></a>
+            </div>
+        </div>
+        <div class="wish-sentence text-center">
+            <span class="ms-3 mt-4 d-inline-block">There are no products on the Wishlist!</span>
+        </div>
+
+        <!-- <div class="wishlist-btn py-3 ">
+            <a href="" class="">Wishlist Page</a>
+        </div> -->
+    </div>
+</section>
+<!-- wishlist heart -->
+
+<!-- search bar -->
+<section id="searchReuse">
+    <div class="search-bar-main-main">
+        <div class="search-bar-content">
+            <div class="search-bar">
+                <i id="search-input-icon" class="bi bi-search"></i>
+                <input id="search-box" type="text" placeholder="Search Products" class="w-50">
+            </div>
+            <a href="#" id="search-close-icon"> <i class="bi bi-x-lg text-dark"></i></a>
+        </div>
+    </div>
+</section>
+<!-- search bar -->
+
+<!-- User login  -->
+<section id="loginReuse">
+    <div class="form-main">
+        <div class="form-main-heading py-4 ps-3">
+            <a href="#">Sign in</a>
+            <a href="#" id="user-close-icon"><i class="bi bi-x-lg"></i></a>
+        </div>
+        <div class="form-user-details mt-3 py-4 ps-4 pe-4">
+            <!-- Login Form -->
+            <div id="login-form">
+                <label for="username">Username or email <span class="text-danger">*</span></label>
+                <input class="d-block" id="username" type="text" required> <br>
+
+                <label for="password">Password <span class="text-danger">*</span> </label>
+                <input class="d-block" id="password" type="password" required>
+
+                <button class="d-inline-block mt-5" id="login">LOG IN</button>
+                <a class="d-block text-center mt-3" id="lost-password" href="#">Lost your password?</a>
+            </div>
+
+            <!-- Forgot Password Form -->
+            <div class="forgot-password-container" id="forgot-password-form">
+                <label for="forgot-email">Username or email <span class="text-danger">*</span></label>
+                <input id="forgot-email" type="email" required> <br>
+
+                <button id="reqotp">Request OTP</button> <br><br>
+
+                <label for="forgot-otp">Enter Your OTP <span class="text-danger">*</span></label>
+                <input id="forgot-otp" type="text" required> <br><br>
+
+                <label for="forgot-password">Enter Your New Password <span class="text-danger">*</span></label>
+                <input id="forgot-password" type="password" required> <br>
+
+                <button id="final">Confirm</button>
+
+                <a id="back-to-login" href="#">Back to Login</a>
+            </div>
+
+            <!-- Registration Form -->
+            <div id="register-form" style="display: none;">
+                <label for="first-name">First Name <span class="text-danger">*</span></label>
+                <input class="d-block" id="first-name" type="text" required> <br>
+
+                <label for="last-name">Last Name <span class="text-danger">*</span></label>
+                <input class="d-block" id="last-name" type="text" required> <br>
+
+                <label for="register-email">Email <span class="text-danger">*</span></label>
+                <input class="d-block" id="register-email" type="email" required> <br>
+
+                <label for="register-password">Password <span class="text-danger">*</span></label>
+                <input class="d-block" id="register-password" type="password" required> <br>
+
+                <button class="d-inline-block mt-5" id="register">REGISTER</button>
+                <a class="d-block text-center mt-3" id="back-to-login-from-register" href="#">Back to Login</a>
+            </div>
+
+            <!-- Underline -->
+            <section>
+                <div class="container py-5 p-5">
+                    <div class="row">
+                        <div class="border-sample"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Create Account -->
+            <div class="create-account text-center">
+                <span class="text-center">No account yet?</span> <a href="#" id="create-account-link">Create an
+                    Account</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- User login JS -->

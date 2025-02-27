@@ -28,7 +28,7 @@ a {
     text-decoration: none;
 }
 
-.active {
+.nav-link.active {
     color: #e2bd99 !important;
     font-weight: bold;
 }
@@ -54,7 +54,7 @@ header {
     background-color: #32586D;
     color: black !important;
     padding: 20px;
-    height: 100vh !important;
+    /* height: 100vh !important; */
     position: relative;
     /* z-index: 1; */
 
@@ -223,8 +223,9 @@ header {
 /* banner srt */
 .banner {
     margin-top: 100px;
-    color: white;
+    color: white !important;
     height: 100%;
+    z-index: 22;
 
     .banner-left {
         padding: 0px 20px;
@@ -1283,14 +1284,14 @@ header {
 
 .shop-hover {
     position: absolute;
-    top: 100%;
+    top: 135%;
     left: 50%;
     color: #fff !important;
-    transform: translateX(-50%);
+    transform: translateX(-55%);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     width: 1000px;
-    background-color: #33596E !important;
+    background-color: #133447 !important;
     z-index: 99;
     font-family: var(--jost);
     /* height: 0px; */
@@ -1298,7 +1299,6 @@ header {
     opacity: 0px;
     visibility: hidden;
     transition: all 0.2s linear;
-    box-shadow: 2px 2px 2px black;
 
     .hover-men-img {
         width: 90px;
