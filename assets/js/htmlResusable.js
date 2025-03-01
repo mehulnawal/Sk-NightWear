@@ -82,6 +82,11 @@ document.addEventListener("DOMContentLoaded", function () {
             $(".menu2").addClass("menu2-toggle");
         });
 
+        $(".menu").click(function () {
+            $(".menu-icon-toggle").addClass("menu-toggle-side");
+            $("body").addClass("body-toggle");
+        });
+
         $(".menu-list").click(function () {
             console.log("Menu list clicked");
             $(".menu-icon-toggle").addClass("toggle-menu");
@@ -93,6 +98,8 @@ document.addEventListener("DOMContentLoaded", function () {
             $(".menu-icon-toggle").removeClass("toggle-menu");
             $(".menu1").removeClass("menu1-toggle");
             $(".menu2").removeClass("menu2-toggle");
+            $(".menu-icon-toggle").removeClass("menu-toggle-side");
+            $("body").removeClass("body-toggle");
             return false;
         });
 
@@ -143,6 +150,15 @@ document.addEventListener("DOMContentLoaded", function () {
         $("#user-close-icon").click(function () {
             console.log("User close clicked");
             $(".form-main").removeClass("form-main-transform");
+        });
+
+        // 6. 
+        $(".shop-li").hover(function () {
+            $(".shop-hover").toggleClass("shop-hover-toggle");
+        })
+
+        $(".shop-hover").hover(function () {
+            $(this).toggleClass("shop-hover-toggle");
         });
     }
 });

@@ -1173,8 +1173,6 @@ label {
 /* shopping cart */
 
 
-
-
 /* hiiden page lost your password page css */
 /* Forgot Password Form */
 /* Forgot Password Form Container */
@@ -1272,44 +1270,85 @@ label {
     text-decoration: underline;
 }
 
-
-header {
-    /* position: relative !important; */
-}
-
-.shop-li {
-    /* transition: all 0.6s ease-in-out; */
-    /* padding-bottom: 20px; */
-}
-
 .shop-hover {
     position: absolute;
     top: 135%;
-    left: 50%;
+    left: 0%;
     color: #fff !important;
-    transform: translateX(-55%);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    width: 1000px;
+    width: 100%;
     background-color: #133447 !important;
     z-index: 99;
     font-family: var(--jost);
-    /* height: 0px; */
+    height: 0px;
     height: fit-content;
     opacity: 0px;
     visibility: hidden;
     transition: all 0.2s linear;
 
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .men,
+    .women {
+        .title {
+            font-family: var(--elsi-font);
+            width: fit-content;
+            color: #fff;
+        }
+
+        .title:hover {
+            color: #a18863 !important;
+            font-weight: 700;
+        }
+
+        .men-inside,
+        .women-inside {
+            margin-top: 20px;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+                margin-top: 10px;
+                padding: 0px;
+
+                li {
+                    font-size: 17px;
+
+                    .sub-categories {
+                        margin-top: 10px;
+                        padding: 0px;
+                        display: flex;
+                        flex-direction: column !important;
+                        gap: 1px;
+                        font-family: var(--jost);
+
+                        li {
+                            a {
+                                font-size: 14px !important;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            li a:hover {
+                color: #e2bd99;
+            }
+        }
+
+    }
+
     .hover-men-img {
         width: 90px;
     }
 
-    a {
-        color: #fff !important;
-        text-decoration: none;
-    }
-
-    ul {
+    /* ul {
         li {
             margin-top: 10px !important;
 
@@ -1317,11 +1356,27 @@ header {
                 font-weight: 500;
             }
         }
-    }
+    } */
 }
 
-.shop-li:hover+.shop-hover,
-.shop-hover:hover {
+.shop-hover-toggle {
     opacity: 1;
     visibility: visible;
+}
+
+.menu-toggle-side {
+    /* overflow-y: scroll; */
+    transform: translateX(0%);
+    visibility: visible;
+    opacity: 1;
+    width: 400px;
+}
+
+
+.body-toggle {
+    overflow: hidden;
+}
+
+w .body-toggle::-webkit-scrollbar {
+    width: 0px !important;
 }
