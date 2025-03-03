@@ -1,0 +1,3 @@
+if (typeof window.isOnCollectionTemplate === "undefined" || window.isOnCollectionTemplate == false) {
+    updateWizzyConfig();
+}

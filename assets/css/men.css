@@ -1,0 +1,121 @@
+/* common css srt */
+/* Elsie Swash Caps font*/
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
+/* Elsie Swash Caps font*/
+
+/* jost srt */
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+/* jost end */
+
+/* common css srt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #535051;
+    --font_hanken: "Hanken Grotesk", serif;
+    --elsi-font: "Elsie Swash Caps", serif;
+    --jost: "Jost", serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* common css end */
+
+/* banner srt */
+.banner {
+
+    .comfort-1 {
+        margin-top: 10px;
+        height: 350px;
+        width: 100%;
+
+        .left {
+            height: 350px;
+            width: 50%;
+
+            a {
+                background-image: url('../images/men/men-Vests.png');
+                background-size: cover;
+                background-position: top;
+                height: 350px;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+
+        .right {
+            height: 100%;
+            width: 50%;
+
+            a {
+                background-image: url('../images/men/men-Innerwear_6.png');
+                background-size: cover;
+                background-position: top;
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+    }
+
+    .comfort-2 {
+        text-transform: uppercase;
+        margin: 30px 0px 0px 0px;
+        color: #000;
+        text-align: center;
+        font-family: var(--elsi-font);
+        font-size: 30px;
+        word-spacing: 5px;
+
+        .up {
+            font-weight: 600;
+        }
+    }
+
+    .comfort-3 {
+        margin-top: 10px;
+        height: 350px;
+        width: 100%;
+
+        .left {
+            height: 350px;
+            width: 50%;
+
+            a {
+                background-image: url('../images/men/men-Stylish_Tops.png');
+                background-size: cover;
+                background-position: top;
+                height: 350px;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+
+        .right {
+            height: 100%;
+            width: 50%;
+
+            a {
+                background-image: url('../images/men/men-Timeless_Bottoms.png');
+                background-size: cover;
+                background-position: top;
+                height: 100%;
+                width: 100%;
+                display: inline-block;
+            }
+        }
+
+    }
+}
+
+/* banner end */

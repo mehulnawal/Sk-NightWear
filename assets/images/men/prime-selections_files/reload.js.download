@@ -1,0 +1,20 @@
+//This function automatically checks for any uninitiated wishlist button and initiaties it. 
+//It is meant to be added programatically via script tags. Please don't add it directly to theme
+setInterval(function() {
+var has_empty_smartwishlist_button=0;
+if((typeof $)!='undefined')
+{
+	$(".smartwishlist").each(function(){
+	if($(this).html()=="") has_empty_smartwishlist_button=1;
+});
+}
+else if((typeof jQuery)!='undefined')
+{
+	jQuery(".smartwishlist").each(function(){
+	if(jQuery(this).html()=="") has_empty_smartwishlist_button=1;
+});
+}
+
+if(has_empty_smartwishlist_button==1) ReloadSmartWishlist();
+
+}, 1000); // check every second	

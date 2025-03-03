@@ -1279,7 +1279,7 @@ label {
     border-bottom-right-radius: 20px;
     width: 100%;
     background-color: #133447 !important;
-    z-index: 99;
+    z-index: 999;
     font-family: var(--jost);
     height: 0px;
     height: fit-content;
@@ -1377,6 +1377,6 @@ label {
     overflow: hidden;
 }
 
-w .body-toggle::-webkit-scrollbar {
+.body-toggle::-webkit-scrollbar {
     width: 0px !important;
 }

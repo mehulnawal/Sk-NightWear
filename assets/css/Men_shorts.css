@@ -390,16 +390,34 @@ h1 {
             width: 100%;
             border-radius: 15px;
             margin: auto 0px;
-            display: flex;
-            justify-content: center;
+
+            .swiper {
+                /* width: 100%; */
+                height: 100%;
+            }
+
+            .swiper-slide {
+                text-align: center;
+                font-size: 18px;
+                background: #fff;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .swiper-slide img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         .heart-icon {
             position: absolute;
             right: 18px;
             top: 15px;
-            /* background-color: rebeccapurple; */
-            z-index: 5;
+            z-index: 3;
             font-size: 22px;
             cursor: pointer;
         }
@@ -447,5 +465,7 @@ h1 {
     }
 
 }
+
+/* swiper js */
 
 /* main end */
