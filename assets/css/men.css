@@ -32,6 +32,32 @@ a {
 /* common css end */
 
 /* banner srt */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    margin-top: 30px;
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* banner end */
+
+/* comfort srt */
 .comfort {
 
     .comfort-1 {
@@ -118,7 +144,7 @@ a {
     }
 }
 
-/* banner end */
+/* comfort end */
 
 /* prime selection srt */
 .prime {
@@ -146,6 +172,33 @@ a {
         height: 650px;
         width: 100%;
 
+        .plus-circle {
+            position: relative;
+            background-color: green;
+            width: 100%;
+            height: 100%;
+        }
+
+        .plus-circle::before {
+            content: '';
+            position: absolute;
+            background-color: #fff;
+            background-color: red;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+        }
+
+        .plus-1-circle::before {
+            top: 10%;
+            left: 0%;
+        }
+
+        .plus-2-circle::before {
+            bottom: 10%;
+            left: 44%;
+        }
+
         .plus {
             position: absolute;
             transform: translateX(-50%);
@@ -162,8 +215,171 @@ a {
             bottom: 40%;
             left: 47%;
         }
+
+        @keyframes plus-animation {}
     }
 
 }
 
 /* prime selection end */
+
+/* essentials made amazing srt */
+.essentials {
+    margin: 30px 0px;
+
+    h5 {
+        text-transform: uppercase;
+        margin: 0px 0px 0px 0px;
+        color: #000;
+        text-align: center;
+        font-family: var(--elsi-font);
+        font-size: 30px;
+        word-spacing: 5px;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .categories-main {
+        height: 100%;
+
+        .categories-body {
+            flex-shrink: 0;
+            width: 167px;
+            height: 200px;
+
+            a {
+
+                .product-img-shorts,
+                .product-img-tShirts,
+                .product-img-bottomwear,
+                .product-img-Underwear,
+                .product-img-vests,
+                .product-img-thermal {
+                    background-image: url('../images/men/essentials-shorts.jpeg');
+                    background-size: cover top;
+                    background-position: center;
+                    height: 200px;
+                    width: 100%;
+                    border-radius: 5px;
+                }
+
+                .product-img-tShirts {
+                    background-image: url('../images/men/essentials-tShirts.jpeg');
+                }
+
+                .product-img-bottomwear {
+                    background-image: url('../images/men/essentials-bottomwear.jpeg');
+                }
+
+                .product-img-Underwear {
+                    background-image: url('../images/men/essentials-underwear.jpeg');
+                }
+
+                .product-img-thermal {
+                    background-image: url('../images/men/essentials-thermal.jpeg');
+                }
+
+                .product-img-vests {
+                    background-image: url('../images/men/essentials-vests.jpeg');
+                }
+
+                h6 {
+                    color: #000;
+                    font-size: 20px;
+                    font-family: var(--jost);
+                    text-align: center;
+                    margin: 3px;
+                }
+            }
+        }
+
+    }
+}
+
+/* essentials made amazing end */
+
+/* multiPacks and socks srt*/
+.multiPacks {
+    margin: 60px 0px;
+
+    .product-image-multipacks,
+    .product-image-socks {
+        background-image: url('../images/men/Multipacks.png');
+        background-size: cover;
+        background-position: center;
+        height: 280px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .product-image-socks {
+        background-image: url('../images/men/socks.png');
+    }
+}
+
+/* multiPacks and socks end*/
+
+/* popular searches */
+.searches {
+    h5 {
+        text-transform: uppercase;
+        margin: 0px 0px 0px 0px;
+        color: #000;
+        text-align: start;
+        font-family: var(--elsi-font);
+        font-size: 30px;
+        word-spacing: 5px;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .men,
+    .women {
+        h6 {
+            font-size: 22px;
+            margin-top: 10px;
+            font-family: var(--jost);
+        }
+
+        .categories-main {
+            flex-wrap: wrap;
+
+            a {
+                font-size: 17px;
+                color: #000;
+                font-family: var(--font_hanken);
+                white-space: nowrap;
+            }
+
+            a:hover {
+                color: #484F58;
+                font-weight: 600;
+            }
+
+            .men-categories {
+                position: relative;
+            }
+
+            .men-categories::before {
+                content: '';
+                position: absolute;
+                left: -20%;
+                top: 50%;
+                transform: translateY(-50%);
+                background-color: #000;
+                height: 80%;
+                width: 2px;
+            }
+        }
+    }
+
+    .women {
+        margin-top: 30px;
+    }
+}
+
+/* popular searches */

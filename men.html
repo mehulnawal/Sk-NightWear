@@ -43,6 +43,10 @@
 
     <!-- link media css -->
     <link rel="stylesheet" href="./assets/css/media.css">
+
+    <!-- slick  -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
@@ -50,9 +54,42 @@
     <!-- navbar and navbar toggle -->
     <section id="navReuse"></section>
 
+
+    <div class="container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/images/men/Mens_collection.png" alt="">
+                    SLIDE 1
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/men/Mens_collection.png" alt="">
+                    SLIDE 2
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/men/Mens_collection.png" alt="">
+                    SLIDE 3
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/men/Mens_collection.png" alt="">
+                    SLIDE 4
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/men/Mens_collection.png" alt="">
+                    SLIDE 5
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/men/Mens_collection.png" alt="">
+                    SLIDE 6
+                </div>
+            </div>
+        </div>
+    </div>
+
     <main>
 
-        <!-- banner section srt -->
+        <!-- comfort section srt -->
         <div class="container">
             <section class="comfort mb-3">
                 <div class="comfort-1 d-flex gap-3">
@@ -78,7 +115,7 @@
                 </div>
             </section>
         </div>
-        <!-- banner section end -->
+        <!-- comfort section end -->
 
         <!-- prime selections srt -->
         <div class="container">
@@ -86,16 +123,183 @@
                 <h5>Prime <span>Selections</span></h5>
 
                 <div class="background-img">
-                    <i class="fa-solid fa-plus plus plus-1"></i>
-                    <i class="fa-solid fa-plus plus plus-2"></i>
+
+                    <i class="fa-solid fa-plus plus plus-1">
+                        <div class="plus-1-circle plus-circle"></div>
+                    </i>
+
+                    <i class="fa-solid fa-plus plus plus-2">
+                        <div class="plus-1-circle plus-circle"></div>
+                    </i>
                 </div>
 
             </section>
         </div>
         <!-- prime selections end -->
 
-    </main>
+        <!-- Essentials Made Amazing srt-->
+        <div class="container">
+            <section class="essentials">
+                <h5><span>Essentials</span> Made Amazing</h5>
 
+                <div class="d-flex flex-wrap gap-3 mt-4 justify-content-center categories-main">
+                    <div class="categories-body  mt-4">
+                        <a href="">
+                            <div class="product-img-shorts"></div>
+                            <h6>Shorts</h6>
+                        </a>
+                    </div>
+
+                    <div class="categories-body  mt-4">
+                        <a href="">
+                            <div class="product-img-tShirts"></div>
+                            <h6>T-shirts</h6>
+                        </a>
+                    </div>
+
+                    <div class="categories-body mt-4">
+                        <a href="">
+                            <div class="product-img-bottomwear"></div>
+                            <h6>Bottomwear</h6>
+                        </a>
+                    </div>
+
+                    <div class="categories-body  mt-4">
+                        <a href="">
+                            <div class="product-img-Underwear"></div>
+                            <h6>Underwear</h6>
+                        </a>
+                    </div>
+
+                    <div class="categories-body  mt-4">
+                        <a href="">
+                            <div class="product-img-vests"></div>
+                            <h6>Vests</h6>
+                        </a>
+                    </div>
+
+                    <div class="categories-body  mt-4">
+                        <a href="">
+                            <div class="product-img-thermal"></div>
+                            <h6>Thermal</h6>
+                        </a>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </div>
+        <!-- Essentials Made Amazing end-->
+
+        <!-- multiPacks and socks srt -->
+        <div class="container">
+            <div class="multiPacks ">
+                <div class="row justify-content-center ">
+                    <div class="col-lg-6 col-md">
+                        <a href="./">
+                            <div class="product-image-multipacks"></div>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6 col-md mt-md-0 mt-2">
+                        <a href="./">
+                            <div class="product-image-socks"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- multiPacks and socks end -->
+
+        <!-- popular searches srt -->
+        <div class="container">
+            <div class="searches my-4">
+                <h5>Popular Searches</h5>
+
+                <div class="men">
+                    <h6>Men</h6>
+
+                    <ul class="p-0 m-0 d-flex gap-2 categories-main">
+                        <li class="">
+                            <a href="./Men_shorts.html">Shorts</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">T-Shirts</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Bottomwear</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Thermal</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Underwear</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Vests</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Socks</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Multipacks</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="women">
+                    <h6>women</h6>
+
+                    <ul class="p-0 m-0 d-flex gap-2 categories-main">
+                        <li class="">
+                            <a href="./Men_shorts.html">Shorts</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">T-Shirts</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Bottomwear</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Thermal</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Underwear</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Vests</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Socks</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Multipacks</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- popular searches end -->
+
+    </main>
 
     <!-- shopping cart -->
     <div class="shopping-cart-main">
@@ -235,6 +439,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- slick carousel js -->
 
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 2000,
+            }
+        });
+    </script>
+
     <!-- aos js -->
     <script src="./assets/js/aos.js"></script>
     <!-- aos js -->
@@ -246,7 +459,7 @@
     </script>
     <!-- aos script -->
 
-    <!-- swiper js script link -->
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- jquery cdn -->
