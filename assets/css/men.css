@@ -32,27 +32,31 @@ a {
 /* common css end */
 
 /* banner srt */
-.swiper {
-    width: 100%;
-    height: 100%;
-}
+.swiper-main {
+    height: 100vh;
 
-.swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
 
-.swiper-slide img {
-    margin-top: 30px;
-    display: block;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center;
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        margin-top: 30px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
 }
 
 /* banner end */
@@ -120,7 +124,7 @@ a {
             a {
                 background-image: url('../images/men/men-Stylish_Tops.png');
                 background-size: cover;
-                background-position: top;
+                background-position: center top;
                 height: 350px;
                 width: 100%;
                 display: inline-block;
@@ -144,84 +148,326 @@ a {
     }
 }
 
-/* comfort end */
+/* prime selections srt */
 
-/* prime selection srt */
-.prime {
-    margin: 60px 0px;
+.container-main {
 
-    h5 {
-        text-transform: uppercase;
-        margin: 0px 0px 0px 0px;
-        color: #000;
-        text-align: center;
-        font-family: var(--elsi-font);
-        font-size: 30px;
-        word-spacing: 5px;
+    position: relative;
+    /* height: 100%; */
+    overflow: hidden;
 
-        span {
-            font-weight: 600;
+    /* prime selection srt */
+    .prime {
+        margin: 60px 0px;
+
+        h5 {
+            text-transform: uppercase;
+            margin: 0px 0px 0px 0px;
+            color: #000;
+            text-align: center;
+            font-family: var(--elsi-font);
+            font-size: 30px;
+            word-spacing: 5px;
+
+            span {
+                font-weight: 600;
+            }
         }
-    }
 
-    .background-img {
-        position: relative;
-        background-image: url('../images/men/Mens_collection.png');
-        background-position: center top;
-        background-size: cover;
-        height: 650px;
-        width: 100%;
-
-        .plus-circle {
+        .background-img {
             position: relative;
-            background-color: green;
+            background-image: url('../images/men/Mens_collection.png');
+            background-position: center top;
+            background-size: cover;
+            height: 650px;
             width: 100%;
-            height: 100%;
+
+            .plus-circle {
+                position: relative;
+                background-color: green;
+                width: 100%;
+                height: 100%;
+            }
+
+            .plus-circle::before {
+                content: '';
+                position: absolute;
+                background-color: #fff;
+                background-color: red;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+
+            .plus-1-circle::before {
+                top: 10%;
+                left: 0%;
+            }
+
+            .plus-2-circle::before {
+                bottom: 10%;
+                left: 44%;
+            }
+
+            .plus {
+                position: absolute;
+                transform: translateX(-50%);
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .plus-1 {
+                top: 25%;
+                left: 52%;
+            }
+
+            .plus-2 {
+                bottom: 40%;
+                left: 47%;
+            }
+
+            @keyframes plus-animation {}
         }
 
-        .plus-circle::before {
-            content: '';
-            position: absolute;
-            background-color: #fff;
-            background-color: red;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-        }
-
-        .plus-1-circle::before {
-            top: 10%;
-            left: 0%;
-        }
-
-        .plus-2-circle::before {
-            bottom: 10%;
-            left: 44%;
-        }
-
-        .plus {
-            position: absolute;
-            transform: translateX(-50%);
-            color: #fff;
-            cursor: pointer;
-        }
-
-        .plus-1 {
-            top: 25%;
-            left: 52%;
-        }
-
-        .plus-2 {
-            bottom: 40%;
-            left: 47%;
-        }
-
-        @keyframes plus-animation {}
     }
 
+    /* prime selection end */
+
+    /* shop the look vest srt */
+    .shopLook-main {
+        height: 70%;
+
+        .shopLook {
+            width: 70%;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 15px;
+            padding: 20px 20px;
+            position: absolute;
+            top: 23%;
+            /* left: 0%; */
+            margin: 0px auto;
+            transition: all 0.8s ease-in-out;
+
+            .shopLookMain {
+                font-family: var(--jost);
+
+                .cross-icon {
+                    cursor: pointer;
+                    font-size: 19px;
+                }
+
+                h5 {
+                    font-size: 18px !important;
+                    font-weight: 500;
+                }
+            }
+
+            .products {
+                height: 100%;
+                padding: 0px;
+                margin: 0px;
+
+                .products-body {
+                    border: 1px solid #000;
+                    border-radius: 10px;
+                    padding: 5px 5px;
+                    /* height: 100%; */
+
+                    .product-img,
+                    .product-img-1,
+                    .product-img-2,
+                    .product-img-3 {
+                        background-size: cover;
+                        background-position: center top;
+                        height: 280px;
+                        width: 100%;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: end;
+
+                        .heart-icon {
+                            font-size: 18px;
+                            cursor: pointer;
+                            width: fit-content;
+                            height: fit-content;
+                        }
+
+                        .heart-icon:hover {
+                            color: red;
+                        }
+                    }
+
+                    .product-img-1 {
+                        background-image: url('../images/men/shopLook.jpeg');
+                        background-size: cover;
+                        background-position: center top;
+                        background-color: rebeccapurple;
+                    }
+
+                    .product-img-2 {
+                        background-size: cover;
+                        background-position: center top;
+                        background-image: url('../images/men/shopLook.jpeg');
+                    }
+
+                    .product-img-3 {
+                        background-image: url('../images/men/shopLook.jpeg');
+                        background-size: cover;
+                        background-position: center top;
+                    }
+
+                    .product-code {
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+
+                    .product-description {
+                        margin-top: 20px;
+                        font-size: 13px;
+                    }
+
+                    .price-main {
+                        .addToBag {
+                            cursor: pointer;
+                            background-color: #000;
+                            color: #fff;
+                            border-radius: 5px;
+                            padding: 6px 10px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* shop the look vest end */
+
+    /* shop the look vest srt */
+    .shopLook-main-shorts {
+        height: 70%;
+
+        .shopLook {
+            width: 70%;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 15px;
+            padding: 20px 20px;
+            position: absolute;
+            top: 23%;
+            /* left: 0%; */
+            margin: 0px auto;
+            transition: all 0.8s ease-in-out;
+
+            .shopLookMain {
+                font-family: var(--jost);
+
+                .cross-icon {
+                    cursor: pointer;
+                    font-size: 19px;
+                }
+
+                h5 {
+                    font-size: 18px !important;
+                    font-weight: 500;
+                }
+            }
+
+            .products {
+                height: 100%;
+                padding: 0px;
+                margin: 0px;
+
+                .products-body {
+                    border: 1px solid #000;
+                    border-radius: 10px;
+                    padding: 5px 5px;
+                    /* height: 100%; */
+
+                    .product-img,
+                    .product-img-1,
+                    .product-img-2,
+                    .product-img-3 {
+                        background-size: cover;
+                        background-position: center top;
+                        height: 280px;
+                        width: 100%;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: end;
+
+                        .heart-icon {
+                            font-size: 18px;
+                            cursor: pointer;
+                            width: fit-content;
+                            height: fit-content;
+                        }
+
+                        .heart-icon:hover {
+                            color: red;
+                        }
+                    }
+
+                    .product-img-1 {
+                        background-image: url('../images/men/shopLook-shorts.jpeg');
+                        background-size: cover;
+                        background-position: center top;
+                        background-color: rebeccapurple;
+                    }
+
+                    .product-img-2 {
+                        background-size: cover;
+                        background-position: center top;
+                        background-image: url('../images/men/shopLook-shorts.jpeg');
+                    }
+
+                    .product-img-3 {
+                        background-image: url('../images/men/shopLook-shorts.jpeg');
+                        background-size: cover;
+                        background-position: center top;
+                    }
+
+                    .product-code {
+                        font-size: 14px;
+                        margin-top: 10px;
+                    }
+
+                    .product-description {
+                        margin-top: 20px;
+                        font-size: 13px;
+                    }
+
+                    .price-main {
+                        .addToBag {
+                            cursor: pointer;
+                            background-color: #000;
+                            color: #fff;
+                            border-radius: 5px;
+                            padding: 6px 10px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* shop the look vest end */
 }
 
-/* prime selection end */
+/* prime selections end  */
+.shopLook-main .shopLook,
+.shopLook-main-shorts .shopLook {
+
+    transform: translateY(120%);
+    transition: transform 0.8s ease-in-out;
+}
+
+.shopLook-main .shopLook-toggle,
+.shopLook-main-shorts .shopLook-toggle {
+    transform: translateY(0%);
+}
 
 /* essentials made amazing srt */
 .essentials {
