@@ -22,6 +22,7 @@
 }
 
 ul li {
+
     list-style: none;
 }
 
@@ -49,13 +50,15 @@ a {
         justify-content: center;
         align-items: center;
         height: 100%;
+        border-radius: 30px;
     }
 
     .swiper-slide img {
         margin-top: 30px;
-        height: 100%;
+        height: fit-content;
         object-fit: cover;
         object-position: center;
+        border-radius: 30px;
 
     }
 }
@@ -87,7 +90,7 @@ a {
         margin: 20px 0px 0px 0px;
         color: #000;
         text-align: center;
-        font-family: var(--elsi-font);
+        font-family: var(--jost);
         font-size: 30px;
         word-spacing: 5px;
 
@@ -131,7 +134,7 @@ a {
             margin: 0px 0px 0px 0px;
             color: #000;
             text-align: center;
-            font-family: var(--elsi-font);
+            font-family: var(--jost);
             font-size: 30px;
             word-spacing: 5px;
 
@@ -325,7 +328,7 @@ a {
         margin: 0px 0px 0px 0px;
         color: #000;
         text-align: center;
-        font-family: var(--elsi-font);
+        font-family: var(--jost);
         font-size: 30px;
         word-spacing: 5px;
 
@@ -341,6 +344,7 @@ a {
             flex-shrink: 0;
             width: 167px;
             height: 200px;
+            margin-top: 40px !important;
 
             a {
 
@@ -396,6 +400,7 @@ a {
 /* multiPacks and socks srt*/
 .multiPacks {
     margin: 60px 0px;
+    margin-bottom: 8%;
 
     .product-image-multipacks,
     .product-image-socks {
@@ -415,7 +420,7 @@ a {
         margin: 0px 0px 0px 0px;
         color: #000;
         text-align: start;
-        font-family: var(--elsi-font);
+        font-family: var(--jost);
         font-size: 30px;
         word-spacing: 5px;
 
