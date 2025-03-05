@@ -63,44 +63,27 @@ a {
 
 /* comfort srt */
 .comfort {
+    height: 100%;
 
     .comfort-1 {
         margin-top: 10px;
-        height: 350px;
+        height: fit-content;
         width: 100%;
 
         .left {
-            height: 350px;
+            height: fit-content;
             width: 50%;
-
-            a {
-                background-image: url('../images/men/men-Vests.png');
-                background-size: cover;
-                background-position: top;
-                height: 350px;
-                width: 100%;
-                display: inline-block;
-            }
         }
 
         .right {
             height: 100%;
             width: 50%;
-
-            a {
-                background-image: url('../images/men/men-Innerwear_6.png');
-                background-size: cover;
-                background-position: top;
-                height: 100%;
-                width: 100%;
-                display: inline-block;
-            }
         }
     }
 
     .comfort-2 {
         text-transform: uppercase;
-        margin: 30px 0px 0px 0px;
+        margin: 20px 0px 0px 0px;
         color: #000;
         text-align: center;
         font-family: var(--elsi-font);
@@ -114,35 +97,17 @@ a {
 
     .comfort-3 {
         margin-top: 10px;
-        height: 350px;
+        height: fit-content;
         width: 100%;
 
         .left {
-            height: 350px;
+            height: fit-content;
             width: 50%;
-
-            a {
-                background-image: url('../images/men/men-Stylish_Tops.png');
-                background-size: cover;
-                background-position: center top;
-                height: 350px;
-                width: 100%;
-                display: inline-block;
-            }
         }
 
         .right {
             height: 100%;
             width: 50%;
-
-            a {
-                background-image: url('../images/men/men-Timeless_Bottoms.png');
-                background-size: cover;
-                background-position: top;
-                height: 100%;
-                width: 100%;
-                display: inline-block;
-            }
         }
 
     }
@@ -234,117 +199,7 @@ a {
     /* prime selection end */
 
     /* shop the look vest srt */
-    .shopLook-main {
-        height: 70%;
-
-        .shopLook {
-            width: 70%;
-            background-color: #fff;
-            border: 1px solid #000;
-            border-radius: 15px;
-            padding: 20px 20px;
-            position: absolute;
-            top: 23%;
-            /* left: 0%; */
-            margin: 0px auto;
-            transition: all 0.8s ease-in-out;
-
-            .shopLookMain {
-                font-family: var(--jost);
-
-                .cross-icon {
-                    cursor: pointer;
-                    font-size: 19px;
-                }
-
-                h5 {
-                    font-size: 18px !important;
-                    font-weight: 500;
-                }
-            }
-
-            .products {
-                height: 100%;
-                padding: 0px;
-                margin: 0px;
-
-                .products-body {
-                    border: 1px solid #000;
-                    border-radius: 10px;
-                    padding: 5px 5px;
-                    /* height: 100%; */
-
-                    .product-img,
-                    .product-img-1,
-                    .product-img-2,
-                    .product-img-3 {
-                        background-size: cover;
-                        background-position: center top;
-                        height: 280px;
-                        width: 100%;
-                        border-radius: 10px;
-                        display: flex;
-                        justify-content: end;
-
-                        .heart-icon {
-                            font-size: 18px;
-                            cursor: pointer;
-                            width: fit-content;
-                            height: fit-content;
-                        }
-
-                        .heart-icon:hover {
-                            color: red;
-                        }
-                    }
-
-                    .product-img-1 {
-                        background-image: url('../images/men/shopLook.jpeg');
-                        background-size: cover;
-                        background-position: center top;
-                        background-color: rebeccapurple;
-                    }
-
-                    .product-img-2 {
-                        background-size: cover;
-                        background-position: center top;
-                        background-image: url('../images/men/shopLook.jpeg');
-                    }
-
-                    .product-img-3 {
-                        background-image: url('../images/men/shopLook.jpeg');
-                        background-size: cover;
-                        background-position: center top;
-                    }
-
-                    .product-code {
-                        font-size: 14px;
-                        margin-top: 10px;
-                    }
-
-                    .product-description {
-                        margin-top: 20px;
-                        font-size: 13px;
-                    }
-
-                    .price-main {
-                        .addToBag {
-                            cursor: pointer;
-                            background-color: #000;
-                            color: #fff;
-                            border-radius: 5px;
-                            padding: 6px 10px;
-                            font-size: 13px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    /* shop the look vest end */
-
-    /* shop the look vest srt */
+    .shopLook-main,
     .shopLook-main-shorts {
         height: 70%;
 
@@ -389,15 +244,15 @@ a {
                     .product-img-1,
                     .product-img-2,
                     .product-img-3 {
-                        background-size: cover;
-                        background-position: center top;
                         height: 280px;
                         width: 100%;
                         border-radius: 10px;
-                        display: flex;
-                        justify-content: end;
+                        margin-bottom: 15%;
 
                         .heart-icon {
+                            position: absolute;
+                            right: 0px;
+                            top: 10%;
                             font-size: 18px;
                             cursor: pointer;
                             width: fit-content;
@@ -407,25 +262,6 @@ a {
                         .heart-icon:hover {
                             color: red;
                         }
-                    }
-
-                    .product-img-1 {
-                        background-image: url('../images/men/shopLook-shorts.jpeg');
-                        background-size: cover;
-                        background-position: center top;
-                        background-color: rebeccapurple;
-                    }
-
-                    .product-img-2 {
-                        background-size: cover;
-                        background-position: center top;
-                        background-image: url('../images/men/shopLook-shorts.jpeg');
-                    }
-
-                    .product-img-3 {
-                        background-image: url('../images/men/shopLook-shorts.jpeg');
-                        background-size: cover;
-                        background-position: center top;
                     }
 
                     .product-code {
@@ -439,13 +275,17 @@ a {
                     }
 
                     .price-main {
+                        /* white-space: nowrap; */
+                        justify-content: space-between;
+
                         .addToBag {
                             cursor: pointer;
                             background-color: #000;
                             color: #fff;
                             border-radius: 5px;
                             padding: 6px 10px;
-                            font-size: 13px;
+                            font-size: 10px;
+                            white-space: nowrap;
                         }
                     }
                 }
@@ -454,19 +294,25 @@ a {
     }
 
     /* shop the look vest end */
+
+    /* shop the look vest srt */
 }
+
+/* shop the look vest end */
+
 
 /* prime selections end  */
 .shopLook-main .shopLook,
 .shopLook-main-shorts .shopLook {
-
     transform: translateY(120%);
+    visibility: hidden;
     transition: transform 0.8s ease-in-out;
 }
 
 .shopLook-main .shopLook-toggle,
 .shopLook-main-shorts .shopLook-toggle {
     transform: translateY(0%);
+    visibility: visible;
 }
 
 /* essentials made amazing srt */
@@ -552,16 +398,10 @@ a {
 
     .product-image-multipacks,
     .product-image-socks {
-        background-image: url('../images/men/Multipacks.png');
-        background-size: cover;
-        background-position: center;
         height: 280px;
         width: 100%;
         border-radius: 8px;
-    }
-
-    .product-image-socks {
-        background-image: url('../images/men/socks.png');
+        margin-bottom: 8%;
     }
 }
 

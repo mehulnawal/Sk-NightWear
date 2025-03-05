@@ -68,6 +68,22 @@
         top: -20px !important;
         height: 65px;
     }
+
+
+    .shopLook {
+        .products {
+            .products-body {
+
+                .product-img,
+                .product-img-1,
+                .product-img-2,
+                .product-img-3 {
+                    height: fit-content !important;
+                    /* margin-bottom: 10px !important; */
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -255,6 +271,24 @@
         width: 400px !important;
     }
 
+    .product-image-multipacks,
+    .product-image-socks {
+        height: fit-content !important;
+        margin-bottom: 5% !important;
+    }
+
+    .shopLook {
+        width: 100% !important;
+
+        .products {
+            .products-body {
+                .price-main {
+                    flex-direction: column !important;
+                }
+            }
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -313,6 +347,15 @@
     .toggle-filter-side {
         width: 100% !important;
     }
+
+    .comfort-1,
+    .comfort-3 {
+
+        .left,
+        .right {
+            width: 100% !important;
+        }
+    }
 }
 
 @media (max-width: 430px) {
@@ -347,6 +390,8 @@
             gap: 2px !important;
         }
     }
+
+
 }
 
 

@@ -1094,7 +1094,7 @@ label {
     right: 0;
     z-index: 999;
     /* display: none; */
-    transform: translateX(500px);
+    transform: translateX(600px);
     transition: all ease 0.5s;
 }
 
@@ -1147,7 +1147,7 @@ label {
     /* display: none; */
     overflow-y: scroll;
     /* visibility: hidden; */
-    transform: translateX(500px);
+    transform: translateX(600px);
     transition: all ease 0.5s;
 }
 
