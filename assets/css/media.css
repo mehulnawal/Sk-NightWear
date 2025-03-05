@@ -356,6 +356,14 @@
             width: 100% !important;
         }
     }
+
+    .swiper-main {
+        height: 70vh !important;
+
+        .swiper-slide img {
+            object-position: center top !important;
+        }
+    }
 }
 
 @media (max-width: 430px) {
