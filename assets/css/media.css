@@ -189,6 +189,7 @@
         padding: 20px 0px !important;
     }
 
+
 }
 
 @media (max-width: 768px) {
@@ -286,6 +287,24 @@
                     flex-direction: column !important;
                 }
             }
+        }
+    }
+
+    .swiper-main {
+        display: none !important;
+    }
+
+    .shopLook-main,
+    .shopLook-main-shorts {
+        height: 100% !important;
+    }
+
+    .product-img,
+    .product-img-2 {
+
+        img {
+            height: 100% !important;
+            width: 80%;
         }
     }
 

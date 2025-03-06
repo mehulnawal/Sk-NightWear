@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Carousel</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+    <style>
+        .slider {
+            width: 400px;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .slider__item {
+            padding: 40px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .slider__item img {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="slider">
+        <div class="slider__item">
+            <img class="img-fluid" src="./assets/images/men-shorts/men_shorts1.jpeg" class="main-img" />
+        </div>
+        <div class="slider__item">
+            <img class="img-fluid" src="./assets/images/men-shorts/men_shorts2.jpeg" />
+        </div>
+        <div class="slider__item">
+            <img class="img-fluid" src="./assets/images/men-shorts/men_shorts3.jpeg" />
+        </div>
+        <div class="slider__item">
+            <img class="img-fluid" src="./assets/images/men-shorts/men_shorts4.jpeg" />
+        </div>
+        <div class="slider__item">
+            <img class="img-fluid" src="./assets/images/men-shorts/men_shorts1.jpeg" />
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: false,
+                autoplaySpeed: 1000,
+                arrows: false
+            });
+
+            // Start autoplay on hover
+            $('.slider').mouseenter(function () {
+                $(this).slick('slickPlay');
+            });
+
+            // Pause autoplay when mouse leaves
+            $('.slider').mouseleave(function () {
+                $(this).slick('slickPause');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

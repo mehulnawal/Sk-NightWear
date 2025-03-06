@@ -88,19 +88,23 @@
                                 <div class="swiper mySwiper">
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
-                                            <img src="./assets/images/men-shorts/men_shorts1.jpeg" class="main-img" />
+                                            <img src="./assets/images/men-shorts/men_shorts1.jpeg" class="main-img"
+                                                draggable="false" style="pointer-events: none;" />
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./assets/images/men-shorts/men_shorts2.jpeg" />
+                                            <img src="./assets/images/men-shorts/men_shorts2.jpeg" draggable="false" />
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./assets/images/men-shorts/men_shorts3.jpeg" />
+                                            <img src="./assets/images/men-shorts/men_shorts3.jpeg" draggable="false"
+                                                style="pointer-events: none;" />
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./assets/images/men-shorts/men_shorts4.jpeg" />
+                                            <img src="./assets/images/men-shorts/men_shorts4.jpeg" draggable="false"
+                                                style="pointer-events: none;" />
                                         </div>
                                         <div class="swiper-slide">
-                                            <img src="./assets/images/men-shorts/men_shorts1.jpeg" />
+                                            <img src="./assets/images/men-shorts/men_shorts1.jpeg" draggable="false"
+                                                style="pointer-events: none;" />
                                         </div>
                                     </div>
                                 </div>
@@ -488,7 +492,7 @@
             effect: "fade",
             loop: true,
             autoplay: {
-                delay: 2000,
+                delay: 1500,
                 disableOnInteraction: false,
             }
         });
@@ -500,22 +504,21 @@
     <script src="./assets/js/jquery-3.7.1.min.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $("#search-icon").click(function () {
-                $(".search-bar-main-main").addClass("search-bar-main-main");
-                return false;
-            });
-        });
+        // $(document).ready(function () {
+        //     $("#search-icon").click(function () {
+        //         $(".search-bar-main-main").addClass("search-bar-main-main");
+        //         return false;
+        //     });
+        // });
 
-        $(document).ready(function () {
-            $("#search-close-icon").click(function () {
-                $(".search-bar-main-main").removeClass("search-bar-main-main-transform");
-            });
-        });
+        // $(document).ready(function () {
+        //     $("#search-close-icon").click(function () {
+        //         $(".search-bar-main-main").removeClass("search-bar-main-main-transform");
+        //     });
+        // });
     </script>
 
     <!-- Men shorts js-->
-    <script src="./assets/js/Men_shorts.js"></script>
 
     <!-- Html Reusable code -->
     <script src="./assets/js/htmlResusable.js"></script>

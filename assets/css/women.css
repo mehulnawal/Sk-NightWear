@@ -1,0 +1,60 @@
+.container-main {
+    .prime {
+        .background-img {
+            position: relative;
+            background-image: url('../images/women/Move-collection.png');
+            background-position: center top;
+            background-size: cover;
+            height: 750px;
+            width: 100%;
+        }
+    }
+}
+
+.teens {
+    .teens-main {
+        height: fit-content;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+.comfort-3-img {
+    height: 450px !important;
+    width: 100%;
+}
+
+.prime {
+    .plus-1 {
+        top: 35% !important;
+        left: 48% !important;
+    }
+
+    .plus-2 {
+        bottom: 40%;
+        left: 51.5% !important;
+    }
+}
+
+.product-img,
+.product-img-2 {
+    height: fit-content !important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F0;
+
+    img {
+        height: 320px;
+        width: 80%;
+    }
+}
+
+.heart-icon {
+    font-size: 22px !important;
+    right: 20px !important;
+}
+
+.shopLook {
+    top: 5% !important;
+}
