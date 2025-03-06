@@ -452,6 +452,10 @@ h1 {
 .swiper-slide {
     display: none;
     /* Hide all images except the main one */
+
+    img {
+        border-radius: 100px !important;
+    }
 }
 
 .main-img {
@@ -460,6 +464,7 @@ h1 {
     object-fit: cover;
     transition: opacity 0.3s ease-in-out;
     /* Smooth fade effect */
+    border-radius: 15px !important;
 }
 
 

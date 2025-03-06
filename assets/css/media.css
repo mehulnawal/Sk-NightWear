@@ -377,11 +377,15 @@
     }
 
     .swiper-main {
-        height: 70vh !important;
+        /* height: 70vh !important; */
 
         .swiper-slide img {
             object-position: center top !important;
         }
+    }
+
+    body {
+        overflow-x: hidden !important;
     }
 }
 

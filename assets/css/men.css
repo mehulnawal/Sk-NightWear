@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+body {
+    /* overflow-x: hidden; */
+}
+
 /* common css end */
 
 /* banner srt */
@@ -63,10 +67,24 @@ a {
     }
 }
 
+.banner-main {
+    height: 100vh;
+    margin: 20px 0px;
+    padding: 20px 0px;
+
+    video {
+        border-radius: 50px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+    }
+}
+
 /* banner end */
 
 /* comfort srt */
 .comfort {
+    margin-top: 7%;
     height: 100%;
 
     .comfort-1 {
@@ -121,7 +139,7 @@ a {
 
 .container-main {
 
-    position: relative;
+    /* position: relative; */
     /* height: 100%; */
     overflow: hidden;
 
@@ -205,16 +223,18 @@ a {
     /* shop the look vest srt */
     .shopLook-main,
     .shopLook-main-shorts {
-        height: 70%;
+        height: 100%;
+        padding: 20px 20px;
 
         .shopLook {
+            /* height: 100%; */
             width: 70%;
             background-color: #fff;
             border: 1px solid #000;
             border-radius: 15px;
             padding: 20px 20px;
-            position: absolute;
-            top: 10%;
+            position: fixed;
+            top: 2%;
             /* left: 0%; */
             margin: 0px auto;
             transition: all 0.8s ease-in-out;
@@ -251,7 +271,7 @@ a {
                         height: 280px;
                         width: 100%;
                         border-radius: 10px;
-                        margin-bottom: 15%;
+                        margin-bottom: 5%;
 
                         .heart-icon {
                             position: absolute;
@@ -270,7 +290,7 @@ a {
 
                     .product-code {
                         font-size: 14px;
-                        margin-top: 10px;
+                        /* margin-top: 10px; */
                     }
 
                     .product-description {
@@ -475,3 +495,11 @@ a {
 }
 
 /* popular searches */
+
+.body-toggle {
+    overflow: hidden;
+}
+
+.body-toggle::-webkit-scrollbar {
+    width: 0px !important;
+}
