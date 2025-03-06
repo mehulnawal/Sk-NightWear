@@ -1,24 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".product-box").forEach((product) => {
-        let images = product.querySelectorAll(".swiper-slide img"); // Get all images inside the swiper
-        let mainImage = product.querySelector(".main-img"); // The initially displayed image
+        let images = product.querySelectorAll(".swiper-slide img");
+        let mainImage = product.querySelector(".main-img");
         let currentIndex = 0;
         let interval;
+        let firstImageSrc = mainImage.src; // Store the first image source
 
-        if (!mainImage || images.length < 2) return; // Ensure at least 2 images exist
+        if (!mainImage || images.length < 2) return;
 
-        //  Start changing images ONLY on hover
-        product.addEventListener("mouseenter", function () {
+        // Function to start carousel on hover
+        function startCarousel() {
+            clearInterval(interval); // Clear any previous interval
+            currentIndex = 0; // Reset index to ensure smooth loop
             interval = setInterval(() => {
-                currentIndex = (currentIndex + 1) % images.length; // Loop through images
-                mainImage.src = images[currentIndex].src; // Change image source dynamically
-            }, 1000); // Change every 1 seconds
-        });
+                currentIndex = (currentIndex + 1) % images.length;
+                mainImage.src = images[currentIndex].src;
+            }, 1000);
+        }
 
-        //  Stop sliding images & reset on mouse leave
-        product.addEventListener("mouseleave", function () {
-            clearInterval(interval);
-            mainImage.src = images[0].src; // Reset to first image
-        });
+        // Function to stop carousel and reset to first image
+        function stopCarousel() {
+            clearInterval(interval); // Stop interval
+            mainImage.src = firstImageSrc; // Reset to first image
+        }
+
+        product.addEventListener("mouseenter", startCarousel);
+        product.addEventListener("mouseleave", stopCarousel);
     });
 });
