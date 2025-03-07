@@ -177,7 +177,7 @@ body {
 
         .background-img {
             position: relative;
-            background-image: url('../images/men/Mens_collection.png');
+            background-image: url('../images/men/men-main/Mens_collection.png');
             background-position: center top;
             background-size: cover;
             height: 650px;
@@ -388,7 +388,7 @@ body {
                 .product-img-Underwear,
                 .product-img-vests,
                 .product-img-thermal {
-                    background-image: url('../images/men/essentials-shorts.jpeg');
+                    background-image: url('../images/men/men-main/essentials-shorts.jpeg');
                     background-size: cover top;
                     background-position: center;
                     height: 200px;
@@ -397,23 +397,23 @@ body {
                 }
 
                 .product-img-tShirts {
-                    background-image: url('../images/men/essentials-tShirts.jpeg');
+                    background-image: url('../images/men/men-main/essentials-tShirts.jpeg');
                 }
 
                 .product-img-bottomwear {
-                    background-image: url('../images/men/essentials-bottomwear.jpeg');
+                    background-image: url('../images/men/men-main/essentials-bottomwear.jpeg');
                 }
 
                 .product-img-Underwear {
-                    background-image: url('../images/men/essentials-underwear.jpeg');
+                    background-image: url('../images/men/men-main/essentials-underwear.jpeg');
                 }
 
                 .product-img-thermal {
-                    background-image: url('../images/men/essentials-thermal.jpeg');
+                    background-image: url('../images/men/men-main/essentials-thermal.jpeg');
                 }
 
                 .product-img-vests {
-                    background-image: url('../images/men/essentials-vests.jpeg');
+                    background-image: url('../images/men/men-main/essentials-vests.jpeg');
                 }
 
                 h6 {

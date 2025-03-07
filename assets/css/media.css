@@ -308,6 +308,10 @@
         }
     }
 
+    .popularity-dropdown {
+        right: -17% !important;
+    }
+
 }
 
 @media (max-width: 576px) {

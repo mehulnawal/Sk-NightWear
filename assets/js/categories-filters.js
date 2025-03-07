@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         $(".QF-body").on("click", function () {
             $(this).children(".cross-icon").toggleClass("toggle-cross-icon");
+
         });
 
         // filter side toggle

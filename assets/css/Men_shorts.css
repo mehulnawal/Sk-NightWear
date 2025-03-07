@@ -69,6 +69,11 @@ a {
     width: 25px;
 }
 
+body,
+html {
+    overflow-x: hidden !important;
+}
+
 /* common css end */
 
 
@@ -208,6 +213,7 @@ h1 {
             padding: 1px 20px;
             border-radius: 10px;
             cursor: pointer;
+            white-space: nowrap;
         }
 
         .cross-icon {
@@ -446,12 +452,20 @@ h1 {
     overflow: hidden;
     /* Prevents next image from showing */
     width: 100%;
-    height: auto;
+    height: 100%;
+}
+
+.swiper-wrapper {
+    img {
+        width: 100% !important;
+        height: 300px !important;
+        object-position: center top !important;
+    }
 }
 
 .swiper-slide {
     display: none;
-    /* Hide all images except the main one */
+    /* background-color: #F0F0F0; */
 
     img {
         border-radius: 100px !important;
@@ -463,7 +477,6 @@ h1 {
     height: auto;
     object-fit: cover;
     transition: opacity 0.3s ease-in-out;
-    /* Smooth fade effect */
     border-radius: 15px !important;
 }
 
