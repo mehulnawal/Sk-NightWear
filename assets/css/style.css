@@ -295,16 +295,16 @@ header {
     height: 100vh;
     width: 380px;
     background-color: #133447;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
     transform: translateX(-100%);
-    transition: all 1s ease-in-out;
+    transition: all 0.6s ease-in-out;
     visibility: hidden;
     color: white;
     z-index: 99;
-    overflow: hidden;
-    overflow-y: scroll;
+    overflow: hidden !important;
+    overflow-y: hidden;
     padding: 20px 0px;
 
     .title {
@@ -730,17 +730,17 @@ main {
                     border-top: 1px solid #d6d6d6;
                     padding-top: 36px;
                     cursor: pointer;
-                    position: relative;
+                    /* position: relative; */
 
                     h5 {
                         font-weight: normal;
                     }
 
                     .close {
-                        position: absolute;
-                        right: 0px;
+                        /* position: absolute; */
+                        /* right: 0px; */
                         display: none;
-                        transition: all 0.6s ease-in-out;
+                        /* transition: all 0.6s ease-in-out; */
                     }
                 }
 
@@ -776,6 +776,7 @@ main {
             .nav-item {
 
                 button {
+                    white-space: nowrap;
                     color: #000;
                 }
 
@@ -798,10 +799,10 @@ main {
             /* position: relative; */
             /* height: fit-content !important; */
 
-
             .swiper {
                 width: 100%;
                 height: 100%;
+                padding: 0px 0px 60px 0px;
 
 
                 .swiper-slide {
@@ -869,7 +870,7 @@ main {
                 }
 
                 .swiper-pagination {
-                    /* bottom: -10px !important; */
+                    /* bottom: -8px !important; */
                     z-index: 999 !important;
                 }
 
@@ -1504,6 +1505,13 @@ label {
     width: 0px !important;
 }
 
+.no-scroll {
+    overflow: hidden !important;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
 
 /* logout button */
 #logout-form {

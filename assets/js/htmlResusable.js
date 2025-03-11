@@ -82,26 +82,30 @@ document.addEventListener("DOMContentLoaded", function () {
             $(".menu2").addClass("menu2-toggle");
         });
 
-        $(".menu").click(function () {
-            $(".menu-icon-toggle").addClass("menu-toggle-side");
-            $("body").addClass("body-toggle");
+        // side toggle 
+
+        $(document).ready(function () {
+            $(".menu-list").click(function () {
+                $(".menu-icon-toggle").addClass("toggle-menu").css({
+                    "overflow-y": "visible"
+                });
+                $("html, body").addClass("no-scroll"); // Disable scrolling
+                return false;
+            });
+
+            $(".cross").click(function () {
+                console.log("Cross clicked");
+                $(".menu-icon-toggle").removeClass("toggle-menu").css({
+                    "overflow-y": "hidden"
+                });
+                $("html, body").removeClass("no-scroll");
+                $(".menu1").removeClass("menu1-toggle");
+                $(".menu2").removeClass("menu2-toggle");
+                $(".menu-icon-toggle").removeClass("menu-toggle-side");
+                return false;
+            });
         });
 
-        $(".menu-list").click(function () {
-            console.log("Menu list clicked");
-            $(".menu-icon-toggle").addClass("toggle-menu");
-            return false;
-        });
-
-        $(".cross").click(function () {
-            console.log("Cross clicked");
-            $(".menu-icon-toggle").removeClass("toggle-menu");
-            $(".menu1").removeClass("menu1-toggle");
-            $(".menu2").removeClass("menu2-toggle");
-            $(".menu-icon-toggle").removeClass("menu-toggle-side");
-            $("body").removeClass("body-toggle");
-            return false;
-        });
 
         // 2. Search functionality
         $("#search-icon").click(function () {

@@ -11,7 +11,7 @@
     <link rel="icon" href="./assets/images/logo.png">
 
     <!-- aos link -->
-    <link rel="stylesheet" href="./assets/css/aos.css">
+    <!-- <link rel="stylesheet" href="./assets/css/aos.css"> -->
 
     <!-- font awesome cnd -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -495,7 +495,7 @@
                 </div>
 
                 <div class="best-main h-100">
-                    <ul class="nav nav-tabs d-flex justify-content-end gap-3" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs d-flex justify-content-md-end gap-3" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                                 data-bs-target="#men-tab-pane" type="button" role="tab" aria-controls="men-tab-pane"
@@ -1170,11 +1170,9 @@
             <div class="container">
                 <div class="horizontal-scrolling-items">
                     <div class="horizontal-scrolling-items__item">
-                        Here is some horizontally scrolling text used for a tutorial. It will loop smoothly.&nbsp
                     </div>
 
                     <div class="horizontal-scrolling-items__item">
-                        Here is some horizontally scrolling text used for a tutorial. It will loop smoothly.&nbsp
                     </div>
                 </div>
             </div>
@@ -1317,12 +1315,12 @@
     <!-- slick carousel js -->
 
     <!-- aos js -->
-    <script src="./assets/js/aos.js"></script>
+    <!-- <script src="./assets/js/aos.js"></script> -->
     <!-- aos js -->
 
     <!-- aos script -->
     <script>
-        AOS.init();
+        // AOS.init();
     </script>
     <!-- aos script -->
 
@@ -1339,7 +1337,11 @@
             },
             grabCursor: true,
             breakpoints: {
-                549: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                540: {
                     slidesPerView: 2,
                     spaceBetween: 20,
                 },
@@ -1349,11 +1351,11 @@
                 },
                 768: {
                     slidesPerView: 4,
-                    spaceBetween: 40,
+                    spaceBetween: 20,
                 },
                 1024: {
                     slidesPerView: 4,
-                    spaceBetween: 50,
+                    spaceBetween: 20,
                 },
             },
         });

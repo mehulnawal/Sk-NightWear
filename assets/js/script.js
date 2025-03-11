@@ -3,13 +3,14 @@
 // responsive menu srt
 $(document).ready(function () {
 
-    $(".menu").click(function () {
-        $(".menu1").addClass("menu1-toggle");
-        $(".menu2").addClass("menu2-toggle");
-    })
+    // $(".menu").click(function () {
+    //     $(".menu1").addClass("menu1-toggle");
+    //     $(".menu2").addClass("menu2-toggle");
+    // })
 
     $(".menu-list").click(function () {
-        $(".menu-icon-toggle").addClass("toggle-menu");
+        // $(".menu-icon-toggle").addClass("toggle-menu");
+        // $("body").addClass("body-toggle");
         return false;
     })
 
@@ -17,6 +18,7 @@ $(document).ready(function () {
         $(".menu-icon-toggle").removeClass("toggle-menu");
         $(".menu1").removeClass("menu1-toggle");
         $(".menu2").removeClass("menu2-toggle");
+        // $("body").removeClass("body-toggle");
         return false;
     })
 })
@@ -24,62 +26,47 @@ $(document).ready(function () {
 
 
 // accordion srt
+// $(document).ready(function () {
+//     $(".q1-title").click(function () {
+//         const parent = $(this).parent();
+//         const content = parent.find(".q1-content");
+//         const view = parent.find(".view");
+//         const close = parent.find(".close");
+
+//         // Close other sections
+//         $(".q1")
+//             .not(parent)
+//             .find(".q1-content:visible")
+//             .slideUp(300) // Smoothly close
+//             .parent()
+//             .find(".view").fadeIn(200); // Show "View"
+//         $(".q1")
+//             .not(parent)
+//             .find(".close").fadeOut(200); // Hide "Close"
+
+//         // Toggle current section
+//         if (content.is(":visible")) {
+//             content.slideUp(300);
+//             view.fadeIn(200);
+//             close.fadeOut(200);
+//         } else {
+//             content.slideDown(300);
+//             view.fadeOut(200);
+//             close.fadeIn(200);
+//         }
+//     });
+// });
+
 $(document).ready(function () {
     $(".q1-title").click(function () {
-        const parent = $(this).parent();
-        const content = parent.find(".q1-content");
-        const view = parent.find(".view");
-        const close = parent.find(".close");
-
-        // Close other sections
-        $(".q1")
-            .not(parent)
-            .find(".q1-content:visible")
-            .slideUp(300) // Smoothly close
-            .parent()
-            .find(".view").fadeIn(200); // Show "View"
-        $(".q1")
-            .not(parent)
-            .find(".close").fadeOut(200); // Hide "Close"
-
-        // Toggle current section
-        if (content.is(":visible")) {
-            content.slideUp(300);
-            view.fadeIn(200);
-            close.fadeOut(200);
-        } else {
-            content.slideDown(300);
-            view.fadeOut(200);
-            close.fadeIn(200);
-        }
+        $(this).siblings(".q1-content").slideToggle();
+        $(this).children(".close").toggle();
+        $(this).children(".view").toggle();
+        // $(".q1-content").slideUp();
     });
 });
 
 // accordion end
-
-
-document.addEventListener("DOMContentLoaded", function () {
-    const categories = document.querySelectorAll('.categories-content li');
-
-    categories.forEach(category => {
-        category.addEventListener('click', (event) => {
-            event.stopPropagation(); // Prevent bubbling up
-
-            // Collapse all categories except the clicked one
-            categories.forEach(item => {
-                if (item !== category) {
-                    item.classList.remove('dropdown-active');
-                }
-            });
-
-            // Toggle the clicked category
-            category.classList.toggle('dropdown-active');
-        });
-    });
-});
-
-
-
 
 $(document).ready(function () {
     $(".new-arrivals-main").click(function () {
