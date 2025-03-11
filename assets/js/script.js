@@ -57,6 +57,7 @@ $(document).ready(function () {
 
 // accordion end
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const categories = document.querySelectorAll('.categories-content li');
 
@@ -76,6 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
 
 
 $(document).ready(function () {
@@ -127,7 +130,6 @@ $(document).ready(function () {
         return false;
     });
 });
-
 $(document).ready(function () {
     $("#close-cart-icon").click(function () {
         $(".shopping-cart-main").removeClass("shopping-cart-main-transform");
@@ -137,32 +139,45 @@ $(document).ready(function () {
 // cart
 // cart icon
 
+
+//this is comment out because i want user login first and then use it
 // cart icon
-$(document).ready(function () {
-    $(".hear-icon-open").click(function () {
-        $(".wishlist-main").addClass("wishlist-tranform");
-        return false;
-    });
-});
+// $(document).ready(function () {
+//     $(".hear-icon-open").click(function () {
+//         $(".wishlist-main").addClass("wishlist-tranform");
+//         return false;
+//     });
+// });
 
-$(document).ready(function () {
-    $("#heart-close-icon").click(function () {
-        $(".wishlist-main").removeClass("wishlist-tranform");
+// $(document).ready(function () {
+//     $("#heart-close-icon").click(function () {
+//         $(".wishlist-main").removeClass("wishlist-tranform");
 
-    });
-});
+//     });
+// });
 // cart
 // cart icon
 
 
 // user login
+// user login
 $(document).ready(function () {
     $("#user-icon").click(function () {
-        $(".form-main").addClass("form-main-transform");
+        $(".form-main").show(); // Ensure form is visible
+        $(".form-main").removeClass("form-main-transform"); // Reset animation
+
+        setTimeout(function () {
+            $(".form-main").addClass("form-main-transform");
+        }, 10);
+
         return false;
     });
+
     $("#user-close-icon").click(function () {
-        $(".form-main").removeClass("form-main-transform");
+        $(".form-main").removeClass("form-main-transform"); // Trigger closing animation
+
+        setTimeout(function () {
+            $(".form-main").css("display", ""); // Reset display (instead of .hide())
+        }, 300); // Adjust timeout based on animation duration
     });
 });
-// user login
