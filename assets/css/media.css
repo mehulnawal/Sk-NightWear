@@ -368,8 +368,10 @@
 
     .nav-icons {
         ul {
+            margin-right: 65px !important;
+
             li {
-                margin-left: 5px;
+                /* margin-left: 5px; */
             }
         }
     }
@@ -428,7 +430,7 @@
     }
 
     .nav-icons {
-        margin-right: 40px !important;
+        margin-right: 65px !important;
 
         ul {
             gap: 2px !important;

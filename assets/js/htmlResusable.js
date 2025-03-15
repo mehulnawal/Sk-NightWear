@@ -157,12 +157,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // 6. 
-        $(".shop-li").hover(function () {
-            $(".shop-hover").toggleClass("shop-hover-toggle");
-        })
+        $(".shop-li, .shop-hover").on("mouseenter", function () {
+            $(".shop-hover").addClass("shop-hover-toggle");
+        });
 
-        $(".shop-hover").hover(function () {
-            $(this).toggleClass("shop-hover-toggle");
+        $(".shop-li, .shop-hover").on("mouseleave", function () {
+            $(".shop-hover").removeClass("shop-hover-toggle");
         });
     }
 });

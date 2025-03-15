@@ -1,6 +1,6 @@
-/* Elsie Swash Caps font*/
-@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&display=swap');
-/* Elsie Swash Caps font*/
+/* Roboto font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* Roboto font*/
 
 /* jost srt */
 @import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
@@ -16,7 +16,7 @@
 :root {
     --grey: #535051;
     --font_hanken: "Hanken Grotesk", serif;
-    --elsi-font: "Elsie Swash Caps", serif;
+    --elsi-font: "Roboto", sans-serif;
     --jost: "Jost", serif;
 }
 
