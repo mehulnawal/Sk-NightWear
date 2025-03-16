@@ -316,10 +316,20 @@
         right: -17% !important;
     }
 
-    .product-card {
+    .swiper-slide {
 
-        .img {
-            height: 380px !important;
+        .product-card {
+            .img {
+                height: 320px !important;
+            }
+        }
+    }
+
+    .categories-body {
+
+        .category {
+            width: 100% !important;
+            height: fit-content !important;
         }
     }
 
@@ -399,6 +409,15 @@
 
         .swiper-slide img {
             object-position: center top !important;
+        }
+    }
+
+    .swiper-slide {
+
+        .product-card {
+            .img {
+                height: 320px !important;
+            }
         }
     }
 }

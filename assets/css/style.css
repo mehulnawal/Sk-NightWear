@@ -490,18 +490,17 @@ header {
     }
 
     .categories-body {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        /* display: flex; */
+        /* justify-content: space-between; */
         margin-top: 32px;
 
         .category {
             /* margin: 0px auto; */
-            border-radius: 10px;
-            background-color: rgba(202, 196, 196, 0.297);
-            border: 1px solid rgb(251, 250, 250);
+            border-radius: 12px !important;
+            background-color: #F9F9FB;
             padding: 8px 20px;
             margin-top: 10px;
+            height: 170px;
 
             #title {
                 font-weight: 600;
@@ -983,7 +982,8 @@ h2 {
             justify-content: center;
             align-items: center;
             padding: 10px 10px 10px 10px;
-            background-color: rgba(187, 180, 180, 0.595);
+            background-color: #F9F9FB;
+            color: #000;
             border-radius: 6px;
 
             .profile {
@@ -996,7 +996,7 @@ h2 {
                     margin: 0px;
                     text-align: start;
                     margin-top: 20px;
-                    color: #fff;
+                    color: #000;
                 }
             }
 

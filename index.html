@@ -221,37 +221,37 @@
 
         <!-- shop by category srt -->
         <div class="shop-by-category">
-            <div class="container">
+            <div class="container overflow-x-visible">
                 <h2>Shop By Category</h2>
 
                 <div class="categories-body">
                     <div class="row">
 
-                        <div class="col">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <div class="category">
                                 <span id="title">Men's Undergarments</span>
                                 <span id="sub-categories">Briefs, Trunks, Vests</span>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <div class="category">
-                                <span id="title">Men's Undergarments</span>
-                                <span id="sub-categories">Briefs, Trunks, Vests</span>
+                                <span id="title">Men's Casual Wear</span>
+                                <span id="sub-categories">T-Shirts, Tracks, Shorts</span>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <div class="category">
-                                <span id="title">Men's Undergarments</span>
-                                <span id="sub-categories">Briefs, Trunks, Vests</span>
+                                <span id="title">Women's Undergarments & Nightwear</span>
+                                <span id="sub-categories">Bra, Panty, Stockings, Night Suit</span>
                             </div>
                         </div>
 
-                        <div class="col">
+                        <div class="col-lg-3 col-md-6 col-12">
                             <div class="category">
-                                <span id="title">Men's Undergarments</span>
-                                <span id="sub-categories">Briefs, Trunks, Vests</span>
+                                <span id="title">Women's Casual & Activewear</span>
+                                <span id="sub-categories">T-Shirts, Shorts, Fancy Wear, Cycling Slacks</span>
                             </div>
                         </div>
                     </div>
@@ -536,8 +536,8 @@
         </section> -->
 
         <!-- best sellers srt -->
-        <div class="container">
-            <section class="best" data-aos="fade-right">
+        <section class="best" data-aos="fade-right">
+            <div class="container">
                 <div class="best-title text-center">
                     <h2 class="mb-0">Best Sellers</h2>
                 </div>
@@ -967,8 +967,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
         <!-- best sellers end -->
 
         <!-- new arrivals -->
@@ -1218,7 +1218,11 @@
             <h2 class="text-center fw-semibold">Our Premium Brands</h2>
 
             <div class="brand-wheel">
+
                 <div class="brand-slide">
+                    <!-- <div class="logo-div">
+                        <h2>Srt</h2>
+                    </div> -->
                     <div class="logo-div">
                         <img class="" src="./assets/images/jockeyLogo.png" alt="">
                     </div>
@@ -1243,9 +1247,15 @@
                     <div class="logo-div">
                         <img class="" src="./assets/images/jockeyLogo.png" alt="">
                     </div>
+                    <!-- <div class="logo-div">
+                        <h2>end 1st</h2>
+                    </div> -->
                 </div>
 
                 <div class="brand-slide delay">
+                    <!-- <div class="logo-div">
+                        <h2>Srt 2nd</h2>
+                    </div> -->
                     <div class="logo-div">
                         <img class="" src="./assets/images/jockeyLogo.png" alt="">
                     </div>
@@ -1270,6 +1280,9 @@
                     <div class="logo-div">
                         <img class="" src="./assets/images/jockeyLogo.png" alt="">
                     </div>
+                    <!-- <div class="logo-div">
+                        <h2>end 2nd</h2>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -1630,6 +1643,9 @@
         var swiper = new Swiper(".swiper2", {
             slidesPerView: 3,
             spaceBetween: 30,
+            loopedSlides: 3,
+            // loopFillGroupWithBlank: true,
+            centeredSlides: true,
             // freeMode: true,
             loop: true,
             pagination: {
@@ -1680,11 +1696,15 @@
                     spaceBetween: 20,
                 },
                 640: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 20,
                 },
                 768: {
-                    slidesPerView: 4,
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                991: {
+                    slidesPerView: 3,
                     spaceBetween: 20,
                 },
                 1024: {
