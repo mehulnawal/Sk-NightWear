@@ -53,28 +53,122 @@ header {
     background-color: #32586D;
     color: black !important;
     padding: 20px;
-    height: 100% !important;
+    /* height: 100% !important; */
     position: relative;
-    /* z-index: 1; */
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    z-index: 99;
 }
 
+/* banner srt */
+.banner {
+    background-image: url('../images/contact-banner.jpg');
+    background-size: cover;
+    background-position: center top;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin-top: 115px;
+    color: #fff;
+    text-align: center;
+
+    h2 {
+        font-family: var(--elsi-font);
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+
+    h5 {
+        opacity: 0.8;
+    }
+
+    .buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        a {
+            background-color: #fff;
+            border-radius: 30px;
+            padding: 8px 20px;
+            color: #000;
+            border: 1.5px solid #fff;
+        }
+
+        a:hover {
+            border: 1.5px solid #000;
+        }
+
+    }
+}
+
+/* banner end */
+
 .contact-main {
-    margin: 20px 0px 20px 0px;
-    /* height: 100vh; */
-    border-radius: 5px;
+    margin: 70px 0px 20px 0px;
 
     .contact-main-left {
-        h2 {
-            font-family: var(--elsi-font);
-            font-size: 70px;
-            width: 70%;
-            color: #133447;
+
+        .contact {
+            background-color: #EFE7E0;
+            padding: 50px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+
+            h3 {
+                font-family: var(--elsi-font);
+                color: #133447;
+            }
+
+            a {
+                color: #000;
+                margin-left: 5px;
+            }
+
+            a:hover {
+                color: #535051;
+            }
+        }
+
+        .follow-us {
+            background-color: #EFE7E0;
+            padding: 50px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+
+            .icons {
+                margin-top: 20px;
+                display: flex;
+                gap: 15px;
+                font-size: 25px;
+                font-weight: bolder;
+
+                #instagram {
+                    color: rgb(182, 107, 120);
+                }
+
+                #facebook {
+                    color: blue;
+                }
+
+                #twitter {
+                    color: #1C96E8;
+                }
+
+                #youtube {
+                    color: red;
+                }
+            }
         }
     }
 
     .contact-main-right {
         background-color: #EFE7E0;
         padding: 60px 90px 50px 90px;
+        border-radius: 5px;
 
         form {
             margin-top: 20px;
@@ -117,6 +211,45 @@ header {
 }
 
 /* contact form srt */
+
+/* faq srt */
+.frequent {
+    .questions-box {
+        background-color: #F9F9FB;
+        border-radius: 6px;
+        padding: 10px 10px;
+        height: 120px;
+
+        .question-title {
+            font-weight: 700;
+        }
+
+        .answer {
+            margin: 10px 0px;
+        }
+    }
+
+    #view-all {
+        background-color: #000;
+        color: #fff;
+        border-radius: 8px;
+        padding: 8px 14px;
+        border: 0px;
+        outline: 0px;
+        width: fit-content;
+        margin: 10px auto;
+        display: block;
+        text-align: center;
+        border: 1.5px solid #fff;
+    }
+
+    #view-all:hover {
+        border: 1.5px solid #000;
+        /* background-color: #000000c8; */
+    }
+}
+
+/* fqw end */
 
 /* contact-details srt */
 .contact-details {
