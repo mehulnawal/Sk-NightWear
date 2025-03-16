@@ -520,6 +520,7 @@ header {
 
     .best-title {
         margin: 20px 0px;
+        text-align: center;
 
         h2 {
             font-family: var(--elsi-font);

@@ -333,6 +333,17 @@
         }
     }
 
+    .best {
+
+        .best-title {
+            text-align: start !important;
+        }
+
+        .nav-tabs {
+            margin-left: 0px !important;
+        }
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -465,6 +476,14 @@
     .menu {
         width: 30px !important;
         margin-right: 20px !important;
+    }
+
+    .swiper-slide {
+        .product-card {
+            .img {
+                height: 350px !important;
+            }
+        }
     }
 }
 
