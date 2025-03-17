@@ -431,6 +431,11 @@
             }
         }
     }
+
+    .size-chart-main,
+    .return-main {
+        width: 100% !important;
+    }
 }
 
 @media (max-width: 430px) {
