@@ -45,13 +45,13 @@ let minusIcon = document.getElementById("minus");
 let quantity = document.getElementById("quantity-number");
 
 plusIcon.addEventListener("click", function () {
-    if (quantity.innerText >= 0) {
+    if (quantity.innerText >= 1) {
         quantity.innerText = parseInt(quantity.innerText) + 1;
     }
 });
 
 minusIcon.addEventListener("click", function () {
-    if (quantity.innerText > 0) {
+    if (quantity.innerText > 1) {
         quantity.innerText = parseInt(quantity.innerText) - 1;
     }
 });
@@ -59,7 +59,7 @@ minusIcon.addEventListener("click", function () {
 // decrease the quantity on clicking plus 
 minusIcon.addEventListener("mouseover", function () {
 
-    if (quantity.innerText == 0) {
+    if (quantity.innerText == 1) {
         $(this).css({
             "cursor": "not-allowed",
         })

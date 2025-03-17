@@ -111,12 +111,14 @@ document.addEventListener("DOMContentLoaded", function () {
         $("#search-icon").click(function () {
             console.log("Search icon clicked");
             $(".search-bar-main-main").addClass("search-bar-main-main-transform");
+            $("body").addClass("body-toggle");
             return false;
         });
 
         $("#search-close-icon").click(function () {
             console.log("Search close clicked");
             $(".search-bar-main-main").removeClass("search-bar-main-main-transform");
+            $("body").removeClass("body-toggle");
             return false;
         });
 
@@ -124,36 +126,42 @@ document.addEventListener("DOMContentLoaded", function () {
         $("#cart-icon").click(function () {
             console.log("Cart icon clicked");
             $(".shopping-cart-main").addClass("shopping-cart-main-transform");
+            $("body").addClass("body-toggle");
             return false;
         });
 
         $("#close-cart-icon").click(function () {
             console.log("Cart close clicked");
             $(".shopping-cart-main").removeClass("shopping-cart-main-transform");
+            $("body").removeClass("body-toggle");
         });
 
         // 4. Wishlist icon
         $(".hear-icon-open").click(function () {
             console.log("Heart icon clicked");
             $(".wishlist-main").addClass("wishlist-tranform");
+            $("body").addClass("body-toggle");
             return false;
         });
 
         $("#heart-close-icon").click(function () {
             console.log("Heart close clicked");
             $(".wishlist-main").removeClass("wishlist-tranform");
+            $("body").removeClass("body-toggle");
         });
 
         // 5. User login
         $("#user-icon").click(function () {
             console.log("User icon clicked");
             $(".form-main").addClass("form-main-transform");
+            $("body").addClass("body-toggle");
             return false;
         });
 
         $("#user-close-icon").click(function () {
             console.log("User close clicked");
             $(".form-main").removeClass("form-main-transform");
+            $("body").removeClass("body-toggle");
         });
 
         // 6. 

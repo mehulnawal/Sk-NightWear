@@ -201,7 +201,6 @@
         margin-left: 40px !important;
     }
 
-
     .w-Collection-right {
         .text {
             margin: auto !important;
@@ -217,7 +216,6 @@
             font-size: 20px !important;
         }
     }
-
 
     .updated {
         .get-in-touch-right {
@@ -341,6 +339,12 @@
 
         .nav-tabs {
             margin-left: 0px !important;
+        }
+    }
+
+    .ideal {
+        .ideal-card {
+            font-size: 18px !important;
         }
     }
 

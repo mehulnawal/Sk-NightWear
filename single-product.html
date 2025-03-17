@@ -12,6 +12,8 @@
     <!-- aos link -->
     <!-- <link rel="stylesheet" href="./assets/css/aos.css"> -->
 
+
+
     <!-- font awesome cnd -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -188,7 +190,7 @@
     <script src="./backendjs/login.js"></script>
     <script src="./backendjs/openlogin.js"></script>
 
-    <>
+    <main>
 
         <!-- breadcrumb srt -->
         <section class="breadcrumb">
@@ -212,7 +214,27 @@
                 <div class="row">
 
                     <div class="col-lg-6 col-12 mt-2">
-                        <div class="product-left">Hello</div>
+                        <div class="product-left">
+                            <div class="demo">
+                                <ul id="lightSlider">
+                                    <li data-thumb="./assets/images/simgle-product-carousel1.webp">
+                                        <img class="" src="./assets/images/simgle-product-carousel1.webp" />
+                                    </li>
+
+                                    <li data-thumb="./assets/images/simgle-product-carousel2.webp">
+                                        <img src="./assets/images/simgle-product-carousel2.webp" />
+                                    </li>
+
+                                    <li data-thumb="./assets/images/simgle-product-carousel3.webp">
+                                        <img src="./assets/images/simgle-product-carousel3.webp" />
+                                    </li>
+
+                                    <li data-thumb="./assets/images/simgle-product-carousel4.webp">
+                                        <img src="./assets/images/simgle-product-carousel4.webp" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="col-lg-6 col-12 mt-2">
@@ -324,11 +346,11 @@
 
                                 <div class="quantity">
                                     <i class="fa-regular fa-minus icon" id="minus"></i>
-                                    <div id="quantity-number">0</div>
+                                    <div id="quantity-number">1</div>
                                     <i class="fa-regular fa-plus icon" id="plus"></i>
                                 </div>
 
-                                <button id="add-to-cart" class="">Add to Cart</button>
+                                <button id="add-to-cart" class="">Add to Bag</button>
 
                                 <div class="return">
                                     <img id="product-return-icon" src="./assets/images/product-return-icon.png" alt="">
@@ -382,6 +404,200 @@
         </div>
         <!-- product end -->
 
+        <!-- product description srt -->
+        <div class="description">
+            <div class="container">
+                <div class="title">Product Description</div>
+
+                <ul class="description-main">
+                    <li>Super Combed Cotton Rich Pique Fabric</li>
+                    <li>Fabric Composition : Cotton and Polyester</li>
+                    <li>Polo Neck</li>
+                    <li>Half Sleeves</li>
+                    <li>Label Free for All Day Comfort</li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- product description end -->
+
+        <!-- ideal for srt -->
+        <div class="ideal my-4">
+            <div class="container">
+                <div class="d-flex justify-content-between flex-wrap">
+                    <h2 class="mt-4">Ideal For</h2>
+
+                    <di class="casual ideal-card mt-4">
+                        <i class="fa-solid fa-person"></i>
+                        <span>Casual Wear</span>
+                    </di>
+
+                    <div class="all-day ideal-card mt-4">
+                        <i class="fa-solid fa-sun-cloud"></i>
+                        <span>All Day Wear</span>
+                    </div>
+
+                    <div class="work ideal-card mt-4">
+                        <i class="fa-solid fa-laptop-mobile"></i>
+                        <span>Work</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ideal for end -->
+
+        <!-- washing srt -->
+        <div class="washing my-4">
+            <div class="container">
+                <h2>Washing Instruction</h2>
+
+                <div class="washing-body d-flex justify-content-md-between justify-content-start w-100 gap-3 flex-wrap">
+
+                    <div class="washing-card d-flex flex-column align-items-md-center align-items-start">
+                        <img class="washing-card-img" src="./assets/images/Gentle_wash.svg" alt="">
+                        <span class="text-md-center">Gentle wash 40C</span>
+                    </div>
+
+                    <div class="washing-card d-flex flex-column align-items-md-center align-items-start">
+                        <img class="washing-card-img" src="./assets/images/Do_not_bleach.svg" alt="">
+                        <span class="text-md-center">Do not bleach</span>
+                    </div>
+
+                    <div class="washing-card d-flex flex-column align-items-md-center align-items-start">
+                        <img class="washing-card-img" src="./assets/images/Do_not_wring.svg" alt="">
+                        <span class="text-md-center">Do not writing</span>
+                    </div>
+
+                    <div class="washing-card d-flex flex-column align-items-md-center align-items-start">
+                        <img class="washing-card-img" src="./assets/images/Tumble_dry_low.svg" alt="">
+                        <span class="text-md-center">Tumble dry low</span>
+                    </div>
+
+                    <div class="washing-card d-flex flex-column align-items-md-center align-items-start">
+                        <img class="washing-card-img" src="./assets/images/normal_wash_result.svg" alt="">
+                        <span class="text-md-center">Medium iron</span>
+                    </div>
+
+                    <div class="washing-card d-flex flex-column align-items-md-center align-items-start">
+                        <img class="washing-card-img" src="./assets/images/Do_not_dry_clean.svg" alt="">
+                        <span class="text-md-center">Do not dry clean</span>
+                    </div>
+
+                    <div class="washing-card d-flex flex-column align-items-md-center align-items-start">
+                        <img class="washing-card-img" src="./assets/images/Wash_inside_out_with_like_colours.svg"
+                            alt="">
+                        <span class="text-md-center">Wash inside out with like colors</span>
+                    </div>
+
+                    <div class="washing-card d-flex flex-column align-items-md-center align-items-start">
+                        <img class="washing-card-img" src="./assets/images/Do_not_iron_on_label_embroidery.svg" alt="">
+                        <span class="text-md-center">Do not iron on label/embroidery</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- washing end -->
+
+        <!-- manufacturing srt -->
+        <div class="manufacturing my-4">
+            <div class="container">
+                <h2>Manufacturing Details</h2>
+
+                <div class="address">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur commodi voluptate delectus
+                </div>
+            </div>
+        </div>
+        <!-- manufacturing end -->
+
+        <!-- popular searches srt -->
+        <div class="searches my-4">
+            <div class="container">
+                <h2>Popular Searches</h2>
+
+                <div class="men">
+                    <h6>Men</h6>
+
+                    <ul class="p-0 m-0 d-flex gap-2 categories-main">
+                        <li class="">
+                            <a href="./Men_shorts.html">Shorts</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">T-Shirts</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Bottomwear</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Thermal</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Underwear</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Vests</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Socks</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Multipacks</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="women">
+                    <h6>women</h6>
+
+                    <ul class="p-0 m-0 d-flex gap-2 categories-main">
+                        <li class="">
+                            <a href="./Men_shorts.html">Shorts</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">T-Shirts</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Bottomwear</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Thermal</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Underwear</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Vests</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Socks</a>
+                        </li>
+
+                        <li class="men-categories ms-3">
+                            <a href="./Men-tShirts.html">Multipacks</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- popular searches end -->
+
+        <!-- return toggle srt -->
         <div class="return-main">
             <div class="return-policy">
 
@@ -451,7 +667,9 @@
                 </div>
             </div>
         </div>
+        <!-- return toggle en -->
 
+        <!-- size chart toggle srt -->
         <div class="size-chart-main">
             <div class="size-close">
                 <i class="fa-solid fa-xmark mb-0"></i>
@@ -483,20 +701,6 @@
                             </span>
 
                             <span class="d-flex flex-column align-items-center">
-                                <>32</ span>
-                                <span>(31 in - 33 in)</span>
-                            </span>
-
-                            <span class="d-flex justify-content-center size">S</span>
-                        </div>
-
-                        <div class="left-body2 d-flex align-items-center gap-4">
-                            <span class="d-flex flex-column align-items-center">
-                                <span>0.83</span>
-                                <span>(80 cm - 85 cm)</span>
-                            </span>
-
-                            <span class="d-flex flex-column align-items-center">
                                 <span>32</span>
                                 <span>(31 in - 33 in)</span>
                             </span>
@@ -515,7 +719,7 @@
                                 <span>(31 in - 33 in)</span>
                             </span>
 
-                            <span class="d-flex justify-content-center size">S</span>
+                            <span class="d-flex justify-content-center size" id="m">M</span>
                         </div>
 
                         <div class="left-body2 d-flex align-items-center gap-4">
@@ -529,7 +733,7 @@
                                 <span>(31 in - 33 in)</span>
                             </span>
 
-                            <span class="d-flex justify-content-center size">S</span>
+                            <span class="d-flex justify-content-center size">L</span>
                         </div>
 
                         <div class="left-body2 d-flex align-items-center gap-4">
@@ -543,7 +747,21 @@
                                 <span>(31 in - 33 in)</span>
                             </span>
 
-                            <span class="d-flex justify-content-center size">S</span>
+                            <span class="d-flex justify-content-center size">XL</span>
+                        </div>
+
+                        <div class="left-body2 d-flex align-items-center gap-4">
+                            <span class="d-flex flex-column align-items-center">
+                                <span>0.83</span>
+                                <span>(80 cm - 85 cm)</span>
+                            </span>
+
+                            <span class="d-flex flex-column align-items-center">
+                                <span>32</span>
+                                <span>(31 in - 33 in)</span>
+                            </span>
+
+                            <span class="d-flex justify-content-center size" id="xxl">XXL</span>
                         </div>
                     </div>
                 </div>
@@ -556,64 +774,124 @@
                 </div>
             </div>
         </div>
+        <!-- size chart toggle end -->
 
-        </main>
+        <!-- menu bottom toggle srt -->
+        <div class="menu-bottom">
 
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-center gap-3">
+                    <img class="product-img" src="./assets/images/product-carousel.jpeg" alt="">
 
-        <!-- footer  -->
-        <div id="footerReuse"></div>
+                    <span class="fw-semibold">Super Combined Cotton....</span>
 
-        <script src="./backendjs/login.js"></script>
+                    <div>
+                        <!-- <div class="">Select Size</div> -->
+                        <div class="size" id="s">S</div>
+                    </div>
 
-        <!-- bootstrap script link  -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+                    <div class="size" id="m">M</div>
 
-        <!-- slick carousel js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-            integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <!-- slick carousel js -->
+                    <div class="size" id="l">L</div>
 
-        <!-- swiper js  -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                    <div class="size" id="xl">XL</div>
 
-        <!-- product-carousel -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3,
-                spaceBetween: 30,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    <div class="size sold-out" id="xxl">XXL</div>
+
+                    <div class="all-size"></div>
+
+                    <div class="quantity">
+                        <i class="fa-regular fa-minus icon" id="minus"></i>
+                        <div id="quantity-number">1</div>
+                        <i class="fa-regular fa-plus icon" id="plus"></i>
+                    </div>
+
+                    <button id="add-to-cart" class="">Add to Bag</button>
+                </div>
+            </div>
+        </div>
+        <!-- menu bottom toggle end -->
+
+    </main>
+
+    <!-- footer  -->
+    <div id="footerReuse"></div>
+
+    <script src="./backendjs/login.js"></script>
+
+    <!-- bootstrap script link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- slick carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- slick carousel js -->
+
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- product-carousel -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
                 },
-                breakpoints: {
-                    640: {
-                        slidesPerView: 2,
-                        spaceBetween: 20,
-                    },
-                    768: {
-                        slidesPerView: 4,
-                        spaceBetween: 20,
-                    },
-                    1024: {
-                        slidesPerView: 5,
-                        spaceBetween: 20,
-                    },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
                 },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 0,
+                },
+            },
+        });
+    </script>
+
+    <!-- jquery cdn -->
+    <script src="./assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- Html Reusable coe -->
+    <script src="./assets/js/htmlResusable.js"></script>
+
+    <!-- main js -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- single product js -->
+    <script src="./assets/js/single-product.js"></script>
+
+    <!-- JavaScript Dependencies -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+
+    <!-- JavaScript Initialization -->
+    <script>
+        $(document).ready(function () {
+            $('#lightSlider').lightSlider({
+                gallery: true,
+                item: 1,
+                loop: true,
+                slideMargin: 0,
+                thumbItem: 6,
+                auto: true,// Enable auto-sliding
+                pause: 3000,// Time between slide transitions (in ms) - 4 seconds here
+                pauseOnHover: true,// Optional: stops sliding when mouse hovers over the slider
+                speed: 1000
             });
-        </script>
-
-        <!-- jquery cdn -->
-        <script src="./assets/js/jquery-3.7.1.min.js"></script>
-
-        <!-- Html Reusable coe -->
-        <script src="./assets/js/htmlResusable.js"></script>
-
-        <!-- main js -->
-        <script src="./assets/js/script.js"></script>
-
-        <!-- single product js -->
-        <script src="./assets/js/single-product.js"></script>
+        });
+    </script>
 
 </body>
 
