@@ -202,7 +202,7 @@
                     <i class="fa-solid fa-angle-right"></i>
                     <a class="mb-0" href="./Men_shorts.html">Shorts</a>
                     <i class="fa-solid fa-angle-right"></i>
-                    <span class="mb-0 breadcrumb-active">Super Combed Cotton Rich Fabric </span>
+                    <span class="mb-0 breadcrumb-active">Super Combined Cotton Rich Fabric </span>
                 </div>
             </div>
         </section>
@@ -239,8 +239,9 @@
 
                     <div class="col-lg-6 col-12 mt-2">
                         <div class="product-right">
-                            <div class="name d-flex align-items-start justify-content-between">
-                                <p class="w-75 fw-bold">Super Combed Cotton Rich Pique Fabric Solid Half Sleeve Polo
+                            <div
+                                class="name d-flex flex-md-row flex-column align-items-start justify-content-between mt-3">
+                                <p class="w-75 fw-bold">Super Combined Cotton Rich Pique Fabric Solid Half Sleeve Polo
                                     T-Shirt - Corn
                                     Silk</p>
 
@@ -367,7 +368,7 @@
 
                                     <div class="row">
 
-                                        <div class="col-6">
+                                        <div class="col-lg-6 col-12 mt-2">
                                             <form action="" class="mt-3">
                                                 <input type="text" name="" id="pincode" class="box"
                                                     placeholder="Enter your pincode">
@@ -376,11 +377,11 @@
                                             </form>
                                         </div>
 
-                                        <div class="col-6">
+                                        <div class="col-lg-6 col-12 mt-2">
                                             <button id="check" class="box mt-3">Check</button>
                                         </div>
 
-                                        <div class="col-6">
+                                        <div class="col-lg-6 col-12 mt-2">
                                             <div class="box mt-3">
                                                 <i class="fa-solid fa-calendar-clock"></i>
                                                 <span>Estimated Delivery by <span id="date" class="fw-semibold">19
@@ -388,7 +389,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col-6">
+                                        <div class="col-lg-6 col-12 mt-2">
                                             <div class="box mt-3">
                                                 <i class="fa-solid fa-truck-fast"></i>
                                                 <span>Eligible For Free Delivery</span>
@@ -682,7 +683,7 @@
 
             <div class="row justify-content-center align-items-start">
 
-                <div class="col-6 mt-3 d-flex justify-content-end align-items-center">
+                <div class="col-md-6 col-12 mt-3 d-md-flex justify-content-end align-items-center">
                     <div class="size-chart-left">
                         <div class="left-title text-center fw-semibold">
                             Pick You size
@@ -766,7 +767,7 @@
                     </div>
                 </div>
 
-                <div class="col-6 mt-3 d-flex justify-content-center align-items-center">
+                <div class="col-6 d-none mt-3 d-md-flex justify-content-center align-items-center">
                     <div class="size-chart-right">
                         <h5>Polos</h5>
                         <button>Buy Now</button>
@@ -780,33 +781,41 @@
         <div class="menu-bottom">
 
             <div class="container">
-                <div class="d-flex align-items-center justify-content-center gap-3">
-                    <img class="product-img" src="./assets/images/product-carousel.jpeg" alt="">
+                <div class="row align-items-md-center align-items-start justify-content-center">
 
-                    <span class="fw-semibold">Super Combined Cotton....</span>
+                    <div class="col-lg-4 col-12 mt-3">
+                        <div class="d-flex justify-content-md-center align-items-center gap-3">
+                            <img class="product-img" src="./assets/images/product-carousel.jpeg" alt="">
 
-                    <div>
-                        <!-- <div class="">Select Size</div> -->
-                        <div class="size" id="s">S</div>
+                            <span class="fw-semibold">Super Combined Cotton....</span>
+                        </div>
                     </div>
 
-                    <div class="size" id="m">M</div>
+                    <div class="col-lg-4 d-none d-md-block mt-3">
+                        <div class="d-flex justify-content-between align-items-center gap-2">
+                            <div class="size" id="s">S</div>
 
-                    <div class="size" id="l">L</div>
+                            <div class="size" id="m">M</div>
 
-                    <div class="size" id="xl">XL</div>
+                            <div class="size" id="l">L</div>
 
-                    <div class="size sold-out" id="xxl">XXL</div>
+                            <div class="size" id="xl">XL</div>
 
-                    <div class="all-size"></div>
-
-                    <div class="quantity">
-                        <i class="fa-regular fa-minus icon" id="minus"></i>
-                        <div id="quantity-number">1</div>
-                        <i class="fa-regular fa-plus icon" id="plus"></i>
+                            <div class="size sold-out" id="xxl">XXL</div>
+                        </div>
                     </div>
 
-                    <button id="add-to-cart" class="">Add to Bag</button>
+                    <div class="col-lg-4 col-12 mt-3">
+                        <div class="d-flex justify-content-center gap-2 align-items-start">
+                            <div class="quantity">
+                                <i class="fa-regular fa-minus icon" id="minus"></i>
+                                <div id="quantity-number">1</div>
+                                <i class="fa-regular fa-plus icon" id="plus"></i>
+                            </div>
+
+                            <button id="add-to-cart" class="">Add to Bag</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -842,10 +851,10 @@
             },
             breakpoints: {
                 0: {
-                    slidesPerView: 1,
+                    slidesPerView: 3,
                 },
                 640: {
-                    slidesPerView: 2,
+                    slidesPerView: 3,
                     spaceBetween: 0,
                 },
                 768: {
@@ -853,7 +862,7 @@
                     spaceBetween: 0,
                 },
                 1024: {
-                    slidesPerView: 5,
+                    slidesPerView: 4,
                     spaceBetween: 0,
                 },
             },
